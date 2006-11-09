@@ -1,4 +1,8 @@
 Version History -
+2.0.3
+Included many changes from Rabbit
+Update to using AceLocale 2.2
+
 2.0.2
 Finally remembered to update TOC for 1.12.
 Fixed Shaman reagent typo.

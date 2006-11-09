@@ -1,79 +1,76 @@
 local L = AceLibrary("AceLocale-2.1")
 
 L:RegisterTranslation("ReagentFu", "deDE", function() return {
-	["Description"] = "Behält einen Überblick über Ihre Reagenzien f\195\188r das wirken von Verstärkungszaubern.",
+	["Keeps track of your reagents for buffing."] = "Behält einen Überblick über Ihre Reagenzien f\195\188r das wirken von Verstärkungszaubern.",
 	
 	["Show short names"] = "Zeigen kurze Namen",
 	["Show short reagent names in FuBar text"] = "Kurze Reagensnamen im FuBar Text zeigen",
 	["Reagents"] = "Reagenzien",
 	
-	["No reagents to track."] = "Keine zu verfolgenden Reagenzien.",
-	
 	-- reagents
 	--mage	
 	["Arcane Powder"] = "Arkanes Pulver",
+	["Arcane Powder.SHORT"] = "Pulver",
 	["Rune of Teleportation"] = "Rune der Teleportation",
+	["Rune of Teleportation.SHORT"] = "Teleport",
 	["Rune of Portals"] = "Rune der Portale",
+	["Rune of Portals.SHORT"] = "Portal",
 	["Light Feather"] = "Leichte Feder",
-	-- shorttnames for Reagents
-	["Powder: "] = "Pulver: ",
-	["Teleport: "] = "Teleport: ",
-	["Portal: "] = "Portal: ",
-	["Feather: "] = "Feder: ",
+	["Light Feather.SHORT"] = "Feder",
 	--priest
 	["Holy Candle"] = "Heilige Kerze",
+	["Holy Candle.SHORT"] = "Heilige",
 	["Sacred Candle"] = "Hochheilige Kerze",
-	-- shorttnames for Reagents
-	["Holy: "] = "Heilige: ",
-	["Sacred: "] = "Hochheilige: ",
+	["Sacred Candle.SHORT"] = "Hochheilige",
 	-- rogue
 	["Flash Powder"] = "Blitzstrahlpulver",
+	["Flash Powder.SHORT"] = "Blitz",
 	["Blinding Powder"] = "Blendungspulver",
+	["Blinding Powder.SHORT"] = "Blend",
 	["Thistle Tea"] = "Disteltee",
+	["Thistle Tea.SHORT"] = "Distel",
 	["Instant Poison"] = "Sofort wirkendes Gift",
 	["Deadly Poison"] = "T\195\182dliches Gift",
 	["Crippling Poison"] = "Verkr\195\188ppelndes Gift",
 	["Mind-numbing Poison"] = "Gedankenbenebelndes Gift",
 	["Wound Poison"] = "Wundgift",
-	--Shortnames
-	["Flash: "] = "Blitz: ",
-	["Blinding: "] = "Blend: ",
-	["Thistle: "] = "Distel: ",
-	["Poison: "] = "Gift: ",
+	["Poison"] = "Gift",
 	--druid
 	["Wild Berries"] = "Wilde Beeren",
+	["Wild Berries.SHORT"] = "Beeren",
 	["Wild Thornroot"] = "Wilder Dornwurz",
+	["Wild Thornroot.SHORT"] = "Dornwurz",
 	["Maple Seed"] = "Ahornsamenkorn",
+	["Maple Seed.SHORT"] = "Ahornholz",
 	["Stranglethorn Seed"] = "Schlingendornsamenkorn",
+	["Stranglethorn Seed.SHORT"] = "Schlingendorn",
 	["Ashwood Seed"] = "Eschenholzsamenkorn",
+	["Ashwood Seed.SHORT"] = "Eschenholz",
 	["Hornbeam Seed"] = "Hainbuchensamenkorn",
+	["Hornbeam Seed.SHORT"] = "Hainbuchen",
 	["Ironwood Seed"] = "Eisenholzsamenkorn",
-	--Shortnames
-	["Berry: "] = "Beeren: ",
-	["Thornroot: "] = "Dornwurz: ",
-	["Maple: "] = "Ahornholz: ",
-	["Stranglethorn: "] = "Scglingendorn: ",
-	["Ashwood: "] = "Eschenholz: ",
-	["Hornbeam: "] = "Hainbuchen: ",
-	["Ironwood: "] = "Eisenholz: ",
+	["Ironwood Seed.SHORT"] = "Eisenholz",
 	-- Paladin
 	["Symbol of Divinity"] = "Symbol der Offenbarung",
+	["Symbol of Divinity.SHORT"] = "Offenb.",
 	["Symbol of Kings"] = "Symbol der K\195\182nige",
-	-- Shortnames
-	["Divinity: "] = "Offenb.: ",
-	["Kings: "] = "K\195\182nige: ",
+	["Symbol of Kings.SHORT"] = "K\195\182nige",
 	-- Shaman
 	["Ankh"] = "Ankh",
+	["Ankh.SHORT"] = "Ankh",
 	["Shiny Fish Scales"] = "Gl\195\164nzende Fischschuppen",
+	["Shiny Fish Scales.SHORT"] = "Schuppen",
 	["Fish Oil"] = "Fisch\195\182l",
-	--Shortnames
-	["Ankh: "] = "Ankh: ",
-	["Scales: "] = "Schuppen: ",
-	["Oil: "] = "\195\182l: ",
+	["Fish Oil.SHORT"] = "\195\182l",
 	-- warlock
 	["Soul Shard"] = "Seelensplitter",
+	["Soul Shard.SHORT"] = "Splitter",
 	["Healthstone"] = "Gesundheitsstein",
+	["Healthstone.SHORT"] = "Gesundheitsstein",
 	["Soulstone"] = "Seelenstein",
+	["Soulstone.SHORT"] = "Seelen",
 	["Spellstone"] = "Zauberstein",
+	["Spellstone.SHORT"] = "Zauber",
 	["Firestone"] = "Feuerstein",
+	["Firestone.SHORT"] = "Feuer",
 } end)
