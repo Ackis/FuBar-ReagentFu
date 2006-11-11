@@ -1,4 +1,9 @@
 Version History -
+2.0.4
+Fixed Mind-numbing Poison Typo
+Fixed deDE and frFR locals
+Fixed Sacred Candle short name
+
 2.0.3
 Included many changes from Rabbit
 Update to using AceLocale 2.2

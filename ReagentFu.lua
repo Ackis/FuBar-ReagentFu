@@ -203,7 +203,7 @@ function ReagentFu:OnTextUpdate()
 				if	k == L["Instant Poison"] or
 					k == L["Deadly Poison"] or
 					k == L["Crippling Poison"] or
-					k == L["Mind%-numbing Poison"] or
+					k == L["Mind-numbing Poison"] or
 					k == L["Wound Poison"] then
 					poisonCount = poisonCount + v
 				else

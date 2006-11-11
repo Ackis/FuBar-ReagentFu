@@ -21,7 +21,7 @@ L:RegisterTranslations("enUS", function() return {
 	["Holy Candle"] = true,
 	["Holy Candle.SHORT"] = "Holy",
 	["Sacred Candle"] = true,
-	["Sacred Candle"] = "Sacred",
+	["Sacred Candle.SHORT"] = "Sacred",
 	-- rogue
 	["Flash Powder"] = true,
 	["Flash Powder.SHORT"] = "Flash",
@@ -32,7 +32,7 @@ L:RegisterTranslations("enUS", function() return {
 	["Instant Poison"] = true,
 	["Deadly Poison"] = true,
 	["Crippling Poison"] = true,
-	["Mind%-numbing Poison"] = true,
+	["Mind-numbing Poison"] = true,
 	["Wound Poison"] = true,
 	["Poison"] = true,
 	--druid

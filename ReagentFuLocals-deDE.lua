@@ -1,6 +1,6 @@
-local L = AceLibrary("AceLocale-2.1")
+local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
-L:RegisterTranslation("ReagentFu", "deDE", function() return {
+L:RegisterTranslations("deDE", function() return {
 	["Keeps track of your reagents for buffing."] = "Behält einen Überblick über Ihre Reagenzien f\195\188r das wirken von Verstärkungszaubern.",
 	
 	["Show short names"] = "Zeigen kurze Namen",
