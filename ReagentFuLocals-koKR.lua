@@ -52,7 +52,7 @@ L:RegisterTranslations("koKR", function() return {
 	["Ironwood Seed.SHORT"] = "강철",
 	-- Paladin
 	["Symbol of Divinity"] = "신앙의 징표",
-	["Symbol of Divinity.SHORT"] = "신성",
+	["Symbol of Divinity.SHORT"] = "신앙",
 	["Symbol of Kings"] = "왕의 징표",
 	["Symbol of Kings.SHORT"] = "왕",
 	-- Shaman
@@ -64,13 +64,13 @@ L:RegisterTranslations("koKR", function() return {
 	["Fish Oil.SHORT"] = "오일",
 	-- warlock
 	["Soul Shard"] = "영혼의 조각",
-	["Soul Shard.SHORT"] = "영혼의 조각",
+	["Soul Shard.SHORT"] = "조각",
 	["Healthstone"] = "생명석",
-	["Healthstone.SHORT"] = "생명석",
+	["Healthstone.SHORT"] = "생석",
 	["Soulstone"] = "영혼석",
-	["Soulstone.SHORT"] = "영혼석",
+	["Soulstone.SHORT"] = "영석",
 	["Spellstone"] = "주문석",
-	["Spellstone.SHORT"] = "주문석",
+	["Spellstone.SHORT"] = "주문",
 	["Firestone"] = "화염석",
-	["Firestone.SHORT"] = "화염석",
+	["Firestone.SHORT"] = "화염",
 } end)
