@@ -1,4 +1,9 @@
 Version History -
+2.0.5
+Fix Saved Settings
+Really fix Mind-numbing Poison
+Add support for Infernal Stones
+
 2.0.4
 Fixed Mind-numbing Poison Typo
 Fixed deDE and frFR locals

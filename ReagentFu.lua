@@ -16,7 +16,8 @@ local fullCount = {
 		["Soulstone"] = 1,
 		["Healthstone"] = 1,
 		["Firestone"] = 1,
-		["Spellstone"] = 1
+		["Spellstone"] = 1,
+		["Infernal Stone"] = 5
 	};
 
 ReagentFu.hasIcon = "Interface\\Icons\\INV_Misc_Book_09"
@@ -69,49 +70,114 @@ end
 
 function ReagentFu:OnInitialize()
 	_,playerClass = UnitClass("player")
-	if self:TCount(self.db.char.showReagent) == 0 then
-		if playerClass == "DRUID" then
+	if playerClass == "DRUID" then
+		if self.db.char.showReagent[L["Wild Berries"]] == nil then
 			self.db.char.showReagent[L["Wild Berries"]] = true
-			self.db.char.showReagent[L["Wild Thornroot"]] = true
-			self.db.char.showReagent[L["Maple Seed"]] = true
-			self.db.char.showReagent[L["Stranglethorn Seed"]] = true
-			self.db.char.showReagent[L["Ashwood Seed"]] = true
-			self.db.char.showReagent[L["Hornbeam Seed"]] = true
-			self.db.char.showReagent[L["Ironwood Seed"]] = true
-		elseif playerClass == "MAGE" then
-			self.db.char.showReagent[L["Arcane Powder"]] = true
-			self.db.char.showReagent[L["Rune of Teleportation"]] = true
-			self.db.char.showReagent[L["Rune of Portals"]] = true
-			self.db.char.showReagent[L["Light Feather"]] = true
-		elseif playerClass == "PALADIN" then
-			self.db.char.showReagent[L["Symbol of Divinity"]] = true
-			self.db.char.showReagent[L["Symbol of Kings"]] = true
-		elseif playerClass == "PRIEST" then
-			self.db.char.showReagent[L["Holy Candle"]] = true
-			self.db.char.showReagent[L["Sacred Candle"]] = true
-			self.db.char.showReagent[L["Light Feather"]] = true
-		elseif playerClass == "ROGUE" then
-			self.db.char.showReagent[L["Flash Powder"]] = true
-			self.db.char.showReagent[L["Blinding Powder"]] = true
-		    self.db.char.showReagent[L["Thistle Tea"]] = true
-		    self.db.char.showReagent[L["Instant Poison"]] = true
-		    self.db.char.showReagent[L["Deadly Poison"]] = true
-		    self.db.char.showReagent[L["Crippling Poison"]] = true
-		    self.db.char.showReagent[L["Mind-numbing Poison"]] = true
-		    self.db.char.showReagent[L["Wound Poison"]] = true
-		elseif playerClass == "SHAMAN" then
-			self.db.char.showReagent[L["Ankh"]] = true
-			self.db.char.showReagent[L["Shiny Fish Scales"]] = true
-			self.db.char.showReagent[L["Fish Oil"]] = true
-		elseif playerClass == "WARLOCK" then
-			self.db.char.showReagent[L["Soul Shard"]] = true
-			self.db.char.showReagent[L["Healthstone"]] = true
-		    self.db.char.showReagent[L["Soulstone"]] = true
-		    self.db.char.showReagent[L["Spellstone"]] = true
-		    self.db.char.showReagent[L["Firestone"]] = true
-		else
-			self:Hide()
 		end
+		if self.db.char.showReagent[L["Wild Thornroot"]] == nil then
+			self.db.char.showReagent[L["Wild Thornroot"]] = true
+		end
+		if self.db.char.showReagent[L["Maple Seed"]] == nil then
+			self.db.char.showReagent[L["Maple Seed"]] = true
+		end
+		if self.db.char.showReagent[L["Stranglethorn Seed"]] == nil then
+			self.db.char.showReagent[L["Stranglethorn Seed"]] = true
+		end
+		if self.db.char.showReagent[L["Ashwood Seed"]] == nil then
+			self.db.char.showReagent[L["Ashwood Seed"]] = true
+		end
+		if self.db.char.showReagent[L["Hornbeam Seed"]] == nil then
+			self.db.char.showReagent[L["Hornbeam Seed"]] = true
+		end
+		if self.db.char.showReagent[L["Ironwood Seed"]] == nil then
+			self.db.char.showReagent[L["Ironwood Seed"]] = true
+		end
+	elseif playerClass == "MAGE" then
+		if self.db.char.showReagent[L["Arcane Powder"]] == nil then
+			self.db.char.showReagent[L["Arcane Powder"]] = true
+		end
+		if self.db.char.showReagent[L["Rune of Teleportation"]] == nil then
+			self.db.char.showReagent[L["Rune of Teleportation"]] = true
+		end
+		if self.db.char.showReagent[L["Rune of Portals"]] == nil then
+			self.db.char.showReagent[L["Rune of Portals"]] = true
+		end
+		if self.db.char.showReagent[L["Light Feather"]] == nil then
+			self.db.char.showReagent[L["Light Feather"]] = true
+		end
+	elseif playerClass == "PALADIN" then
+		if self.db.char.showReagent[L["Symbol of Divinity"]] == nil then
+			self.db.char.showReagent[L["Symbol of Divinity"]] = true
+		end
+		if self.db.char.showReagent[L["Symbol of Kings"]] == nil then
+			self.db.char.showReagent[L["Symbol of Kings"]] = true
+		end
+	elseif playerClass == "PRIEST" then
+		if self.db.char.showReagent[L["Holy Candle"]] == nil then
+			self.db.char.showReagent[L["Holy Candle"]] = true
+		end
+		if self.db.char.showReagent[L["Sacred Candle"]] == nil then
+			self.db.char.showReagent[L["Sacred Candle"]] = true
+		end
+		if self.db.char.showReagent[L["Light Feather"]] == nil then
+			self.db.char.showReagent[L["Light Feather"]] = true
+		end
+	elseif playerClass == "ROGUE" then
+		if self.db.char.showReagent[L["Flash Powder"]] == nil then
+			self.db.char.showReagent[L["Flash Powder"]] = true
+		end
+		if self.db.char.showReagent[L["Blinding Powder"]] == nil then
+			self.db.char.showReagent[L["Blinding Powder"]] = true
+		end
+		if self.db.char.showReagent[L["Thistle Tea"]] == nil then
+			self.db.char.showReagent[L["Thistle Tea"]] = true
+		end
+		if self.db.char.showReagent[L["Instant Poison"]] == nil then
+			self.db.char.showReagent[L["Instant Poison"]] = true
+		end
+		if self.db.char.showReagent[L["Deadly Poison"]] == nil then
+			self.db.char.showReagent[L["Deadly Poison"]] = true
+		end
+		if self.db.char.showReagent[L["Crippling Poison"]] == nil then
+			self.db.char.showReagent[L["Crippling Poison"]] = true
+		end
+		if self.db.char.showReagent[L["Mind-numbing Poison"]] == nil then
+			self.db.char.showReagent[L["Mind-numbing Poison"]] = true
+		end
+		if self.db.char.showReagent[L["Wound Poison"]] == nil then
+			self.db.char.showReagent[L["Wound Poison"]] = true
+		end
+	elseif playerClass == "SHAMAN" then
+		if self.db.char.showReagent[L["Ankh"]] == nil then
+			self.db.char.showReagent[L["Ankh"]] = true
+		end
+		if self.db.char.showReagent[L["Shiny Fish Scales"]] == nil then
+			self.db.char.showReagent[L["Shiny Fish Scales"]] = true
+		end
+		if self.db.char.showReagent[L["Fish Oil"]] == nil then
+			self.db.char.showReagent[L["Fish Oil"]] = true
+		end
+	elseif playerClass == "WARLOCK" then
+		if self.db.char.showReagent[L["Soul Shard"]] == nil then
+			self.db.char.showReagent[L["Soul Shard"]] = true
+		end
+		if self.db.char.showReagent[L["Healthstone"]] == nil then
+			self.db.char.showReagent[L["Healthstone"]] = true
+		end
+		if self.db.char.showReagent[L["Soulstone"]] == nil then
+			self.db.char.showReagent[L["Soulstone"]] = true
+		end
+		if self.db.char.showReagent[L["Spellstone"]] == nil then
+			self.db.char.showReagent[L["Spellstone"]] = true
+		end
+		if self.db.char.showReagent[L["Firestone"]] == nil then
+			self.db.char.showReagent[L["Firestone"]] = true
+		end
+		if self.db.char.showReagent[L["Infernal Stone"]] == nil then
+			self.db.char.showReagent[L["Infernal Stone"]] = true
+		end
+	else
+		self:Hide()
 	end
 	self.countValues = {}
 end
@@ -268,7 +334,7 @@ function ReagentFu:GetReagentCount()
 					if ((itemName) and (itemName ~= "")) then
 						for reagent, active in pairs(self.db.char.showReagent) do
 							if active then
-								if reagent == itemName or string.find(itemName, reagent) then
+								if reagent == itemName or string.find(itemName, reagent, 1, true) then
 									reagentCount[reagent] = reagentCount[reagent] + itemCount
 								end
 							else
@@ -290,12 +356,4 @@ function ReagentFu:NameFromLink(link)
 			return GetItemInfo(tonumber(string.gsub(link, "|cff%x%x%x%x%x%x|Hitem:(%d+):%d+:%d+:%d+|h.*", "%1") or 0))
 		end
 	end
-end
-
-function ReagentFu:TCount(tab)
-	local n=0;
-	for _ in pairs(tab) do
-		n=n+1;
-	end
-	return n;
 end

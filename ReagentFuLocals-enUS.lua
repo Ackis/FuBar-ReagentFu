@@ -73,4 +73,6 @@ L:RegisterTranslations("enUS", function() return {
 	["Spellstone.SHORT"] = "Spell",
 	["Firestone"] = true,
 	["Firestone.SHORT"] = "Fire",
+	["Infernal Stone"] = true,
+	["Infernal Stone.SHORT"] = "Infernal",
 } end)
