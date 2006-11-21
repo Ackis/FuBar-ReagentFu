@@ -1,4 +1,7 @@
 Version History -
+2.0.6
+Change Short names to fix Ankh error.
+
 2.0.5
 Fix Saved Settings
 Really fix Mind-numbing Poison

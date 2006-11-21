@@ -255,7 +255,7 @@ function ReagentFu:OnTextUpdate()
 					count_string = count_string.."/"
 				end
 				if self:IsShowingShortNames() then
-					count_string = count_string..L[reverse .. ".SHORT"]..": "
+					count_string = count_string..L[reverse .. ".SHORT"]
 				end
 				maxcount = fullCount[reverse]
 				if maxcount == nil then maxcount = 20 end
@@ -280,7 +280,7 @@ function ReagentFu:OnTextUpdate()
 						count_string = count_string.."/"
 					end
 					if self:IsShowingShortNames() then
-						count_string = count_string .. L[reverse .. ".SHORT"]..": "
+						count_string = count_string .. L[reverse .. ".SHORT"]
 					end
 					count_string = count_string..format("|cff%s%d|r", crayon:GetThresholdHexColor(v / maxcount), v)
 				end
@@ -291,7 +291,7 @@ function ReagentFu:OnTextUpdate()
 			count_string = count_string.."/"
 		end
 		if self:IsShowingShortNames() then
-			count_string = count_string .. L["Poison"]..": "
+			count_string = count_string .. L["Poison: "]
 		end
 		count_string = count_string..format("|cff%s%d|r", crayon:GetThresholdHexColor(poisonCount / 10), poisonCount)
 	end
