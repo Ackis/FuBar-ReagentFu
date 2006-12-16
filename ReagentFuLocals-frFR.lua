@@ -75,4 +75,6 @@ L:RegisterTranslations("frFR", function() return {
 	["Firestone.SHORT"] = "Feu: ",
 	["Infernal Stone"] = "Pierre infernale",
 	["Infernal Stone.SHORT"] = "Infernal: ",
+	["Demonic Figurine"] = "Figurine d\195\169moniaque",
+	["Demonic Figurine.SHORT"] = "D\195\169moniaque: ",
 } end)

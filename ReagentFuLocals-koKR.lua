@@ -75,4 +75,6 @@ L:RegisterTranslations("koKR", function() return {
 	["Firestone.SHORT"] = "화염: ",
 	["Infernal Stone"] = "Infernal Stone",
 	["Infernal Stone.SHORT"] = "Infernal: ",
+	["Demonic Figurine"] = "Demonic Figurine",
+	["Demonic Figurine.SHORT"] = "Demonic: ",
 } end)

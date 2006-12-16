@@ -1,4 +1,11 @@
 Version History -
+2.0.8
+Fix for 'random' ordering of reagents.
+
+2.0.7
+Update for WoW 2.0.
+Add support for Demonic Figurine.
+
 2.0.6
 Change Short names to fix Ankh error.
 

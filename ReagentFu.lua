@@ -17,7 +17,50 @@ local fullCount = {
 		["Healthstone"] = 1,
 		["Firestone"] = 1,
 		["Spellstone"] = 1,
-		["Infernal Stone"] = 5
+		["Infernal Stone"] = 5,
+		["Demonic Figurine"] = 5
+	};
+local sortOrder = {
+		--mage
+		["Arcane Powder"] = 1,
+		["Rune of Teleportation"] = 2,
+		["Rune of Portals"] = 3,
+		["Light Feather"] = 20,
+		--priest
+		["Holy Candle"] = 1,
+		["Sacred Candle"] = 2,
+		-- rogue
+		["Flash Powder"] = 1,
+		["Blinding Powder"] = 2,
+		["Thistle Tea"] = 3,
+		["Instant Poison"] = 4,
+		["Deadly Poison"] = 5,
+		["Crippling Poison"] = 6,
+		["Mind-numbing Poison"] = 7,
+		["Wound Poison"] = 8,
+		--druid
+		["Wild Berries"] = 1,
+		["Wild Thornroot"] = 2,
+		["Maple Seed"] = 3,
+		["Stranglethorn Seed"] = 4,
+		["Ashwood Seed"] = 5,
+		["Hornbeam Seed"] = 6,
+		["Ironwood Seed"] = 7,
+		-- Paladin
+		["Symbol of Divinity"] = 1,
+		["Symbol of Kings"] = 2,
+		-- Shaman
+		["Ankh"] = 1,
+		["Shiny Fish Scales"] = 2,
+		["Fish Oil"] = 3,
+		-- warlock
+		["Soul Shard"] = 1,
+		["Healthstone"] = 2,
+		["Soulstone"] = 3,
+		["Spellstone"] = 4,
+		["Firestone"] = 5,
+		["Infernal Stone"] = 6,
+		["Demonic Figurine"] = 7,
 	};
 
 ReagentFu.hasIcon = "Interface\\Icons\\INV_Misc_Book_09"
@@ -176,10 +219,14 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Infernal Stone"]] == nil then
 			self.db.char.showReagent[L["Infernal Stone"]] = true
 		end
+		if self.db.char.showReagent[L["Demonic Figurine"]] == nil then
+			self.db.char.showReagent[L["Demonic Figurine"]] = true
+		end
 	else
 		self:Hide()
 	end
 	self.countValues = {}
+--	table.sort(self.db.char.showReagent, self:sortByKeys)
 end
 
 function ReagentFu:OnEnable()
@@ -225,7 +272,7 @@ function ReagentFu:OnMenuRequest(level, value, inTooltip)
 
 	elseif level == 2 then
 		if value == "filter" then
-			for reagent, t in pairs(self.db.char.showReagent) do
+			for reagent, t in self:pairsByKeys(self.db.char.showReagent) do
 				dewdrop:AddLine(
 					'text', reagent,
 					'func', "ToggleShowing",
@@ -240,6 +287,7 @@ end
 
 function ReagentFu:OnDataUpdate()
 	self:GetReagentCount();
+--	table.sort(reagentCount, self:sortByKeys);
 end
 
 function ReagentFu:OnTextUpdate()
@@ -248,7 +296,7 @@ function ReagentFu:OnTextUpdate()
 	local itemcount = 0;
 	local maxcount;
 	if (playerClass ~= "ROGUE") then
-		for k, v in pairs(reagentCount) do
+		for k, v in self:pairsByKeys(reagentCount) do
 			if (v ~= nil) then
 				reverse = L:GetReverseTranslation(k)
 				if (count_string ~= "") then
@@ -264,7 +312,7 @@ function ReagentFu:OnTextUpdate()
 		end
 	else
 		local poisonCount = 0
-		for k, v in pairs(reagentCount) do
+		for k, v in self:pairsByKeys(reagentCount) do
 			if v ~= nil then
 				if	k == L["Instant Poison"] or
 					k == L["Deadly Poison"] or
@@ -310,7 +358,7 @@ function ReagentFu:OnTooltipUpdate()
 	local r, g, b;
 	local itemcount = 0;
 	local maxcount;
-	for k, v in pairs(reagentCount) do
+	for k, v in self:pairsByKeys(reagentCount) do
 		if v ~= nil then
 			maxcount = fullCount[L:GetReverseTranslation(k)]
 			if maxcount == nil then maxcount = 20 end
@@ -356,4 +404,24 @@ function ReagentFu:NameFromLink(link)
 			return GetItemInfo(tonumber(string.gsub(link, "|cff%x%x%x%x%x%x|Hitem:(%d+):%d+:%d+:%d+|h.*", "%1") or 0))
 		end
 	end
+end
+
+function ReagentFu:pairsByKeys(t)
+	local st = {}
+	local rn
+	for n in pairs(t) do
+		rn = L:GetReverseTranslation(n)
+		table.insert(st, rn)
+	end
+	table.sort(st, function(a, b) return sortOrder[a] < sortOrder[b] end )
+	local i = 0      -- iterator variable
+	local iter = function ()   -- iterator function
+		i = i + 1
+		if st[i] == nil then
+			return nil
+		else
+			return st[i], t[st[i]]
+		end
+	end
+	return iter
 end
