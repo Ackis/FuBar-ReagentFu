@@ -62,7 +62,19 @@ local sortOrder = {
 		["Infernal Stone"] = 6,
 		["Demonic Figurine"] = 7,
 	};
-
+local useFind = {
+		["Instant Poison"] = true,
+		["Deadly Poison"] = true,
+		["Crippling Poison"] = true,
+		["Mind-numbing Poison"] = true,
+		["Wound Poison"] = true,
+		["Healthstone"] = true,
+		["Soulstone"] = true,
+		["Spellstone"] = true,
+		["Firestone"] = true,
+	};
+	
+	
 ReagentFu.hasIcon = "Interface\\Icons\\INV_Misc_Book_09"
 ReagentFu.defaultPosition = "LEFT"
 
@@ -382,7 +394,9 @@ function ReagentFu:GetReagentCount()
 					if ((itemName) and (itemName ~= "")) then
 						for reagent, active in pairs(self.db.char.showReagent) do
 							if active then
-								if reagent == itemName or string.find(itemName, reagent, 1, true) then
+								if reagent == itemName or 
+										(useFind[L:GetReverseTranslation(reagent)] and
+										 string.find(itemName, reagent, 1, true)) then
 									reagentCount[reagent] = reagentCount[reagent] + itemCount
 								end
 							else

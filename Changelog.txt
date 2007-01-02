@@ -1,4 +1,7 @@
 Version History -
+2.0.9
+Only use string.find for select items (Poisons, Warlock stones)
+
 2.0.8
 Fix for 'random' ordering of reagents.
 
