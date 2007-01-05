@@ -238,7 +238,6 @@ function ReagentFu:OnInitialize()
 		self:Hide()
 	end
 	self.countValues = {}
---	table.sort(self.db.char.showReagent, self:sortByKeys)
 end
 
 function ReagentFu:OnEnable()
@@ -412,22 +411,18 @@ end
 
 function ReagentFu:NameFromLink(link)
 	if (link) then
-		if (string.find(GetBuildInfo(), "^2%.")) then
-			return GetItemInfo(link)
-		else
-			return GetItemInfo(tonumber(string.gsub(link, "|cff%x%x%x%x%x%x|Hitem:(%d+):%d+:%d+:%d+|h.*", "%1") or 0))
-		end
+		return GetItemInfo(link)
 	end
 end
 
 function ReagentFu:pairsByKeys(t)
 	local st = {}
-	local rn
 	for n in pairs(t) do
-		rn = L:GetReverseTranslation(n)
-		table.insert(st, rn)
+		table.insert(st, n)
 	end
-	table.sort(st, function(a, b) return sortOrder[a] < sortOrder[b] end )
+	table.sort(st, function(a, b)
+					return sortOrder[L:GetReverseTranslation(a)] < sortOrder[L:GetReverseTranslation(b)]
+				end )
 	local i = 0      -- iterator variable
 	local iter = function ()   -- iterator function
 		i = i + 1

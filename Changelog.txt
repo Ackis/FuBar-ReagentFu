@@ -1,4 +1,7 @@
 Version History -
+2.0.10
+Fix for locale error introduced in 2.0.8
+
 2.0.9
 Only use string.find for select items (Poisons, Warlock stones)
 
