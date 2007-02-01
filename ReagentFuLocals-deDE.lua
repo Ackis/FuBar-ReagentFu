@@ -40,6 +40,8 @@ L:RegisterTranslations("deDE", function() return {
 	["Wild Berries.SHORT"] = "Beeren: ",
 	["Wild Thornroot"] = "Wilder Dornwurz",
 	["Wild Thornroot.SHORT"] = "Dornwurz: ",
+	["Wild Quillvine"] = "Wilde Federranke",
+	["Wild Quillvine.SHORT"] = "Federranke: ",
 	["Maple Seed"] = "Ahornsamenkorn",
 	["Maple Seed.SHORT"] = "Ahornholz: ",
 	["Stranglethorn Seed"] = "Schlingendornsamenkorn",
@@ -50,6 +52,8 @@ L:RegisterTranslations("deDE", function() return {
 	["Hornbeam Seed.SHORT"] = "Hainbuchen: ",
 	["Ironwood Seed"] = "Eisenholzsamenkorn",
 	["Ironwood Seed.SHORT"] = "Eisenholz: ",
+	["Flintweed Seed"] = "Flintgrassaat",
+	["Flintweed Seed.SHORT"] = "Flintgrass: ",
 	-- Paladin
 	["Symbol of Divinity"] = "Symbol der Offenbarung",
 	["Symbol of Divinity.SHORT"] = "Offenb.: ",
