@@ -40,6 +40,8 @@ L:RegisterTranslations("enUS", function() return {
 	["Wild Berries.SHORT"] = "Berry: ",
 	["Wild Thornroot"] = true,
 	["Wild Thornroot.SHORT"] = "Thornroot: ",
+	["Wild Quillvine"] = true,
+	["Wild Quillvine.SHORT"] = "Quillvine: ",
 	["Maple Seed"] = true,
 	["Maple Seed.SHORT"] = "Maple: ",
 	["Stranglethorn Seed"] = true,
@@ -50,6 +52,8 @@ L:RegisterTranslations("enUS", function() return {
 	["Hornbeam Seed.SHORT"] = "Hornbeam: ",
 	["Ironwood Seed"] = true,
 	["Ironwood Seed.SHORT"] = "Ironwood: ",
+	["Flintweed Seed"] = true,
+	["Flintweed Seed.SHORT"] = "Flintweed: ",
 	-- Paladin
 	["Symbol of Divinity"] = true,
 	["Symbol of Divinity.SHORT"] = "Divinity: ",
