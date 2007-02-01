@@ -40,6 +40,8 @@ L:RegisterTranslations("koKR", function() return {
 	["Wild Berries.SHORT"] = "가지: ",
 	["Wild Thornroot"] = "야생 가시뿌리",
 	["Wild Thornroot.SHORT"] = "뿌리: ",
+	["Wild Quillvine"] = true,
+	["Wild Quillvine.SHORT"] = "Quillvine: ",
 	["Maple Seed"] = "단풍나무 씨앗",
 	["Maple Seed.SHORT"] = "단풍: ",
 	["Stranglethorn Seed"] = "가시덩굴 씨앗",
@@ -50,6 +52,8 @@ L:RegisterTranslations("koKR", function() return {
 	["Hornbeam Seed.SHORT"] = "자작: ",
 	["Ironwood Seed"] = "강철나무 씨앗",
 	["Ironwood Seed.SHORT"] = "강철: ",
+	["Flintweed Seed"] = true,
+	["Flintweed Seed.SHORT"] = "Flintweed: ",
 	-- Paladin
 	["Symbol of Divinity"] = "신앙의 징표",
 	["Symbol of Divinity.SHORT"] = "신앙: ",
