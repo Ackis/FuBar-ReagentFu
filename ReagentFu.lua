@@ -41,11 +41,13 @@ local sortOrder = {
 		--druid
 		["Wild Berries"] = 1,
 		["Wild Thornroot"] = 2,
-		["Maple Seed"] = 3,
-		["Stranglethorn Seed"] = 4,
-		["Ashwood Seed"] = 5,
-		["Hornbeam Seed"] = 6,
-		["Ironwood Seed"] = 7,
+		["Wild Quillvine"] = 3,
+		["Maple Seed"] = 4,
+		["Stranglethorn Seed"] = 5,
+		["Ashwood Seed"] = 6,
+		["Hornbeam Seed"] = 7,
+		["Ironwood Seed"] = 8,
+		["Flintweed Seed"] = 9,
 		-- Paladin
 		["Symbol of Divinity"] = 1,
 		["Symbol of Kings"] = 2,
@@ -132,6 +134,9 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Wild Thornroot"]] == nil then
 			self.db.char.showReagent[L["Wild Thornroot"]] = true
 		end
+		if self.db.char.showReagent[L["Wild Quillvine"]] == nil then
+			self.db.char.showReagent[L["Wild Quillvine"]] = true
+		end
 		if self.db.char.showReagent[L["Maple Seed"]] == nil then
 			self.db.char.showReagent[L["Maple Seed"]] = true
 		end
@@ -146,6 +151,9 @@ function ReagentFu:OnInitialize()
 		end
 		if self.db.char.showReagent[L["Ironwood Seed"]] == nil then
 			self.db.char.showReagent[L["Ironwood Seed"]] = true
+		end
+		if self.db.char.showReagent[L["Flintweed Seed"]] == nil then
+			self.db.char.showReagent[L["Flintweed Seed"]] = true
 		end
 	elseif playerClass == "MAGE" then
 		if self.db.char.showReagent[L["Arcane Powder"]] == nil then
