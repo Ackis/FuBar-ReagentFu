@@ -40,6 +40,8 @@ L:RegisterTranslations("frFR", function() return {
 	["Wild Berries.SHORT"] = "Baie: ",
 	["Wild Thornroot"] = "Ronceterre sauvage",
 	["Wild Thornroot.SHORT"] = "Ronceterre: ",
+	["Wild Quillvine"] = "Vigneplume sauvage",
+	["Wild Quillvine.SHORT"] = "Vigneplume: ",
 	["Maple Seed"] = "Graine d'\195\169rable",
 	["Maple Seed.SHORT"] = "\195\137rable: ",
 	["Stranglethorn Seed"] = "Graine de strangleronce",
@@ -50,6 +52,8 @@ L:RegisterTranslations("frFR", function() return {
 	["Hornbeam Seed.SHORT"] = "Charme: ",
 	["Ironwood Seed"] = "Graine de bois de fer",
 	["Ironwood Seed.SHORT"] = "Bois de fer: ",
+	["Flintweed Seed"] = "Graine d'herbe-silex",
+	["Flintweed Seed.SHORT"] = "Herbe-silex: ",
 	-- Paladin
 	["Symbol of Divinity"] = "Symbole de divinit\195\169",
 	["Symbol of Divinity.SHORT"] = "Divinit\195\169: ",
