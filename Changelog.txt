@@ -1,4 +1,7 @@
 Version History -
+2.0.11
+New Druid reagents for level 70 (Thanks epsil)
+
 2.0.10
 Fix for locale error introduced in 2.0.8
 
