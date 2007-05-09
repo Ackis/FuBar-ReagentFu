@@ -3,6 +3,8 @@
 ## Title-koKR: |CFF99FF99F|CFFFFFFFFu|CFF99FF99B|CFFFFFFFFar - |cffffffffReagent|r|cff00ff00Fu|r
 ## Notes: Keeps track of your reagents for buffing.
 ## Notes-koKR: 소모성 재료의 수량을 확인합니다.
+## Title-zhTW: |cFF00FF00[面板]|r施法材料 |cffffffffReagent|r|cff00ff00Fu|r
+## Notes-zhTW: 持續追蹤你職業所需的特殊材料
 ## Author: drathos
 ## X-eMail: drathos@gmail.com
 ## X-Website: http://www.wowinterface.com/downloads/info4818.html
