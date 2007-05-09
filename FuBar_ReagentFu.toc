@@ -26,4 +26,5 @@ ReagentFuLocals-enUS.lua
 ReagentFuLocals-koKR.lua
 ReagentFuLocals-deDE.lua
 ReagentFuLocals-frFR.lua
+ReagentFuLocals-zhTW.lua
 ReagentFu.lua
