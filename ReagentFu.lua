@@ -30,14 +30,14 @@ local sortOrder = {
 		["Holy Candle"] = 1,
 		["Sacred Candle"] = 2,
 		-- rogue
-		["Flash Powder"] = 1,
-		["Blinding Powder"] = 2,
-		["Thistle Tea"] = 3,
-		["Instant Poison"] = 4,
-		["Deadly Poison"] = 5,
-		["Crippling Poison"] = 6,
-		["Mind-numbing Poison"] = 7,
-		["Wound Poison"] = 8,
+		["Flash Powder"] = 3,
+		["Blinding Powder"] = 4,
+		["Thistle Tea"] = 5,
+		["Instant Poison"] = 6,
+		["Deadly Poison"] = 7,
+		["Crippling Poison"] = 8,
+		["Mind-numbing Poison"] = 9,
+		["Wound Poison"] = 10,
 		--druid
 		["Wild Berries"] = 1,
 		["Wild Thornroot"] = 2,
@@ -63,17 +63,26 @@ local sortOrder = {
 		["Firestone"] = 5,
 		["Infernal Stone"] = 6,
 		["Demonic Figurine"] = 7,
+		-- hunter, rogue, warrior
+		["Arrow"] = 1,
+		["Bullet"] = 2,
 	};
+
+-- indicates field on local itemInfo table
+-- referenced from GetReagentCount()
+-- currently one of name,type,subtype
 local useFind = {
-		["Instant Poison"] = true,
-		["Deadly Poison"] = true,
-		["Crippling Poison"] = true,
-		["Mind-numbing Poison"] = true,
-		["Wound Poison"] = true,
-		["Healthstone"] = true,
-		["Soulstone"] = true,
-		["Spellstone"] = true,
-		["Firestone"] = true,
+		["Instant Poison"] = "name",
+		["Deadly Poison"] = "name",
+		["Crippling Poison"] = "name",
+		["Mind-numbing Poison"] = "name",
+		["Wound Poison"] = "name",
+		["Healthstone"] = "name",
+		["Soulstone"] = "name",
+		["Spellstone"] = "name",
+		["Firestone"] = "name",
+		["Arrow"] = "subtype",
+		["Bullet"] = "subtype",
 	};
 	
 	
@@ -210,6 +219,12 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Wound Poison"]] == nil then
 			self.db.char.showReagent[L["Wound Poison"]] = true
 		end
+		if self.db.char.showReagent[L["Arrow"]] == nil then
+			self.db.char.showReagent[L["Arrow"]] = true
+		end
+		if self.db.char.showReagent[L["Bullet"]] == nil then
+			self.db.char.showReagent[L["Bullet"]] = true
+		end
 	elseif playerClass == "SHAMAN" then
 		if self.db.char.showReagent[L["Ankh"]] == nil then
 			self.db.char.showReagent[L["Ankh"]] = true
@@ -242,6 +257,20 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Demonic Figurine"]] == nil then
 			self.db.char.showReagent[L["Demonic Figurine"]] = true
 		end
+	elseif playerClass == "HUNTER" then
+		if self.db.char.showReagent[L["Arrow"]] == nil then
+			self.db.char.showReagent[L["Arrow"]] = true
+		end
+		if self.db.char.showReagent[L["Bullet"]] == nil then
+			self.db.char.showReagent[L["Bullet"]] = true
+		end
+	elseif playerClass == "WARRIOR" then
+		if self.db.char.showReagent[L["Arrow"]] == nil then
+			self.db.char.showReagent[L["Arrow"]] = true
+		end
+		if self.db.char.showReagent[L["Bullet"]] == nil then
+			self.db.char.showReagent[L["Bullet"]] = true
+		end
 	else
 		self:Hide()
 	end
@@ -263,6 +292,8 @@ function ReagentFu:OnEnable()
 		self:SetIcon("Interface\\Icons\\INV_Jewelry_Talisman_06")
 	elseif (playerClass == "WARLOCK") then
 		self:SetIcon("Interface\\Icons\\INV_Misc_Gem_Amethyst_02")
+	elseif (playerClass == "HUNTER" or playerClass == "WARRIOR") then
+		self:SetIcon("Interface\\Icons\\INV_Ammo_Arrow_02")
 	else
 		self:SetIcon("Interface\\Icons\\INV_Misc_Book_09")
 	end
@@ -387,6 +418,7 @@ function ReagentFu:OnTooltipUpdate()
 	end
 end
 
+local itemInfo = {}
 function ReagentFu:GetReagentCount()
 	for reagent, active in pairs(self.db.char.showReagent) do
 		reagentCount[reagent] = 0
@@ -397,13 +429,14 @@ function ReagentFu:GetReagentCount()
 			for slot = 1, size, 1 do
 				local _,itemCount = GetContainerItemInfo(bag, slot);
 				if (itemCount) then
-					local itemName = self:NameFromLink(GetContainerItemLink(bag, slot));
-					if ((itemName) and (itemName ~= "")) then
+					itemInfo.name, _, _, _, _, itemInfo.type, itemInfo.subtype = self:NameFromLink(GetContainerItemLink(bag, slot));
+					if ((itemInfo.name) and (itemInfo.name ~= "")) then
 						for reagent, active in pairs(self.db.char.showReagent) do
 							if active then
-								if reagent == itemName or 
-										(useFind[L:GetReverseTranslation(reagent)] and
-										 string.find(itemName, reagent, 1, true)) then
+								local findField = useFind[L:GetReverseTranslation(reagent)]
+								if reagent == itemInfo.name or 
+										(findField and itemInfo[findField] and
+										 string.find(itemInfo[findField], reagent, 1, true)) then
 									reagentCount[reagent] = reagentCount[reagent] + itemCount
 								end
 							else

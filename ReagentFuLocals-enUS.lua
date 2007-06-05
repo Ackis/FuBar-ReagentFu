@@ -81,4 +81,9 @@ L:RegisterTranslations("enUS", function() return {
 	["Infernal Stone.SHORT"] = "Infernal: ",
 	["Demonic Figurine"] = true,
 	["Demonic Figurine.SHORT"] = "Demonic: ",
+    -- hunter, rogue, warrior
+    ["Arrow"] = true,
+    ["Arrow.SHORT"] = "-> ",
+    ["Bullet"] = true,
+    ["Bullet.SHORT"] = "* ",
 } end)
