@@ -40,8 +40,8 @@ L:RegisterTranslations("koKR", function() return {
 	["Wild Berries.SHORT"] = "가지: ",
 	["Wild Thornroot"] = "야생 가시뿌리",
 	["Wild Thornroot.SHORT"] = "뿌리: ",
-	["Wild Quillvine"] = true,
-	["Wild Quillvine.SHORT"] = "Quillvine: ",
+	["Wild Quillvine"] = "야생 가시덩굴",
+	["Wild Quillvine.SHORT"] = "덩굴: ",
 	["Maple Seed"] = "단풍나무 씨앗",
 	["Maple Seed.SHORT"] = "단풍: ",
 	["Stranglethorn Seed"] = "가시덩굴 씨앗",
@@ -52,8 +52,8 @@ L:RegisterTranslations("koKR", function() return {
 	["Hornbeam Seed.SHORT"] = "자작: ",
 	["Ironwood Seed"] = "강철나무 씨앗",
 	["Ironwood Seed.SHORT"] = "강철: ",
-	["Flintweed Seed"] = true,
-	["Flintweed Seed.SHORT"] = "Flintweed: ",
+	["Flintweed Seed"] = "차돌나무 씨앗",
+	["Flintweed Seed.SHORT"] = "차돌: ",
 	-- Paladin
 	["Symbol of Divinity"] = "신앙의 징표",
 	["Symbol of Divinity.SHORT"] = "신앙: ",
@@ -81,4 +81,9 @@ L:RegisterTranslations("koKR", function() return {
 	["Infernal Stone.SHORT"] = "지옥: ",
 	["Demonic Figurine"] = "악마의 구슬",
 	["Demonic Figurine.SHORT"] = "악마: ",
+    -- hunter, rogue, warrior
+    ["Arrow"] = "화살",
+    ["Arrow.SHORT"] = "-> ",
+    ["Bullet"] = "탄환",
+    ["Bullet.SHORT"] = "* ",
 } end)
