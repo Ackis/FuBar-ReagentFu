@@ -1,14 +1,14 @@
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("deDE", function() return {
-  ["Keeps track of your reagents for buffing."] = "Behält einen Überblick über Ihre Reagenzien f\195\188r das wirken von Verstärkungszaubern.",
-  
-  ["Show short names"] = "Zeigen kurze Namen",
-  ["Show short reagent names in FuBar text"] = "Kurze Reagensnamen im FuBar Text zeigen",
+  ["Keeps track of your reagents for buffing."] = "Verschafft einen \195\156berblick \195\188ber die Reagenzien f\195\188r das Wirken von Zaubern.",
+
+  ["Show short names"] = "Kurze Namen anzeigen",
+  ["Show short reagent names in FuBar text"] = "Kurze Reagenziennamen im FuBar-Text anzeigen",
   ["Reagents"] = "Reagenzien",
-  
+
   -- reagents
-  --mage  
+  --mage
   ["Arcane Powder"] = "Arkanes Pulver",
   ["Arcane Powder.SHORT"] = "Pulver: ",
   ["Rune of Teleportation"] = "Rune der Teleportation",
@@ -53,7 +53,7 @@ L:RegisterTranslations("deDE", function() return {
   ["Ironwood Seed"] = "Eisenholzsamenkorn",
   ["Ironwood Seed.SHORT"] = "Eisenholz: ",
   ["Flintweed Seed"] = "Flintgrassaat",
-  ["Flintweed Seed.SHORT"] = "Flintgrass: ",
+  ["Flintweed Seed.SHORT"] = "Flintgras: ",
   -- Paladin
   ["Symbol of Divinity"] = "Symbol der Offenbarung",
   ["Symbol of Divinity.SHORT"] = "Offenb.: ",
@@ -65,7 +65,7 @@ L:RegisterTranslations("deDE", function() return {
   ["Shiny Fish Scales"] = "Gl\195\164nzende Fischschuppen",
   ["Shiny Fish Scales.SHORT"] = "Schuppen: ",
   ["Fish Oil"] = "Fisch\195\182l",
-  ["Fish Oil.SHORT"] = "\195\182l: ",
+  ["Fish Oil.SHORT"] = "\195\150l: ",
   -- warlock
   ["Soul Shard"] = "Seelensplitter",
   ["Soul Shard.SHORT"] = "Splitter: ",
@@ -77,10 +77,10 @@ L:RegisterTranslations("deDE", function() return {
   ["Spellstone.SHORT"] = "Zauber: ",
   ["Firestone"] = "Feuerstein",
   ["Firestone.SHORT"] = "Feuer: ",
-  ["Infernal Stone"] = "Infernal Stein",
-  ["Infernal Stone.SHORT"] = "Infernal: ",
-  ["Demonic Figurine"] = "Demonic Fig\195\188rchen",
-  ["Demonic Figurine.SHORT"] = "Demonic: ",
+  ["Infernal Stone"] = "H\195\182llenstein",
+  ["Infernal Stone.SHORT"] = "H\195\182llen: ",
+  ["Demonic Figurine"] = "D\195\164monenstatuette",
+  ["Demonic Figurine.SHORT"] = "Statuette: ",
    -- hunter, rogue, warrior
   ["Arrow"] = "Pfeil",
   ["Arrow.SHORT"] = "-> ",
