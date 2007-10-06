@@ -67,7 +67,7 @@ L:RegisterTranslations("zhTW", function() return {
 	["Fish Oil"] = "魚油",
 	["Fish Oil.SHORT"] = "油:",
 	-- warlock
-	["Soul Shard"] = "靈魂碎片",
+	["Soul Shard"] = "靈魂裂片",
 	["Soul Shard.SHORT"] = "碎:",
 	["Healthstone"] = "治療石",
 	["Healthstone.SHORT"] = "治:",
