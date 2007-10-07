@@ -81,4 +81,9 @@ L:RegisterTranslations("zhTW", function() return {
 	["Infernal Stone.SHORT"] = "獄:",
 	["Demonic Figurine"] = "惡魔雕像",
 	["Demonic Figurine.SHORT"] = "惡:",
+    -- hunter, rogue, warrior
+    ["Arrow"] = "箭",
+    ["Arrow.SHORT"] = "-> ",
+    ["Bullet"] = "子彈",
+    ["Bullet.SHORT"] = "* ",
 } end)
