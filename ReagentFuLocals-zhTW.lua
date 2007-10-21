@@ -4,7 +4,7 @@ L:RegisterTranslations("zhTW", function() return {
 	["Keeps track of your reagents for buffing."] = "監視你的施法材料數量。",
 	
 	["Show short names"] = "顯示簡稱",
-	["Show short reagent names in FuBar text"] = "在FuBar上顯示施法材料的簡稱。",
+	["Show short reagent names in FuBar text"] = "在 FuBar 上顯示施法材料的簡稱。",
 	["Reagents"] = "施法材料",
 
 	-- reagents
