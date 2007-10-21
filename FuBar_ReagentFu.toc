@@ -8,11 +8,13 @@
 ## X-eMail: drathos@gmail.com
 ## X-Website: http://www.wowinterface.com/downloads/info4818.html
 ## X-Category: Inventory
+## X-Embeds: Ace2, Tablet-2.0, FuBarPlugin-2.0, Crayon, DewdropLib
 ## Dependencies: FuBar
 ## SavedVariables: ReagentFuDB
 ## SavedVariablesPerCharacter: ReagentFuCharDB
 ## Version: 2.0.10
 ## LoadOnDemand: 1
+
 libs\AceLibrary\AceLibrary.lua
 libs\AceAddon-2.0\AceAddon-2.0.lua
 libs\AceDB-2.0\AceDB-2.0.lua
