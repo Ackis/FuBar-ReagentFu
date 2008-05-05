@@ -36,7 +36,7 @@ L:RegisterTranslations("frFR", function() return {
 	["Wound Poison"] = "Poison douloureux",
 	["Poison: "] = "Poison : ",
 	--druid
-	["Wild Berries"] = "Baie sauvage",
+	["Wild Berries"] = "Baies sauvages",
 	["Wild Berries.SHORT"] = "Baie : ",
 	["Wild Thornroot"] = "Ronceterre sauvage",
 	["Wild Thornroot.SHORT"] = "Ronceterre : ",
