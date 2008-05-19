@@ -1,9 +1,10 @@
-## Interface: 20200
+## Interface: 20400
 ## Title: FuBar - |cffffffffReagent|r|cff00ff00Fu|r
 ## Title-koKR: |CFF99FF99F|CFFFFFFFFu|CFF99FF99B|CFFFFFFFFar - |cffffffffReagent|r|cff00ff00Fu|r
 ## Notes: Keeps track of your reagents for buffing.
 ## Notes-koKR: 소모성 재료의 수량을 확인합니다.
 ## Notes-zhTW: 持續追蹤你職業所需的特殊材料
+## Notes-zhCN: 持续追踪你职业所需的特殊材料
 ## Author: drathos
 ## X-eMail: drathos@gmail.com
 ## X-Website: http://www.wowinterface.com/downloads/info4818.html
