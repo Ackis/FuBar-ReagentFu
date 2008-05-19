@@ -30,4 +30,5 @@ ReagentFuLocals-koKR.lua
 ReagentFuLocals-deDE.lua
 ReagentFuLocals-frFR.lua
 ReagentFuLocals-zhTW.lua
+ReagentFuLocals-zhCN.lua
 ReagentFu.lua
