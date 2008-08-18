@@ -27,6 +27,7 @@ libs\Dewdrop-2.0\Dewdrop-2.0.lua
 libs\Tablet-2.0\Tablet-2.0.lua
 
 ReagentFuLocals-enUS.lua
+ReagentFuLocals-ruRU.lua
 ReagentFuLocals-koKR.lua
 ReagentFuLocals-deDE.lua
 ReagentFuLocals-frFR.lua
