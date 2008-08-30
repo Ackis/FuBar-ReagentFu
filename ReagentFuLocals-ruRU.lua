@@ -1,7 +1,7 @@
 ﻿local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("ruRU", function() return {
-  ["Keeps track of your reagents for buffing."] = "Следит за количеством реагентов для баффов.",
+  ["Keeps track of your reagents for buffing."] = "Отслеживает количество реагентов для баффов.",
 
   ["Show short names"] = "Показывать короткие имена",
   ["Show short reagent names in FuBar text"] = "Показывать короткие имена в тексте FuBar",
@@ -15,8 +15,8 @@ L:RegisterTranslations("ruRU", function() return {
   ["Rune of Teleportation.SHORT"] = "Телепорт: ",
   ["Rune of Portals"] = "Руна порталов",
   ["Rune of Portals.SHORT"] = "Портал: ",
-  ["Light Feather"] = "Leichte Feder",
-  ["Light Feather.SHORT"] = "Feder: ",
+  ["Light Feather"] = "Легкое перышко",
+  ["Light Feather.SHORT"] = "Перо: ",
   --priest
   ["Holy Candle"] = "Святая свеча",
   ["Holy Candle.SHORT"] = "Свеча: ",
@@ -64,11 +64,11 @@ L:RegisterTranslations("ruRU", function() return {
   ["Ankh.SHORT"] = "Крест: ",
   ["Shiny Fish Scales"] = "Gl\195\164nzende Fischschuppen",
   ["Shiny Fish Scales.SHORT"] = "Schuppen: ",
-  ["Fish Oil"] = "Fisch\195\182l",
-  ["Fish Oil.SHORT"] = "\195\150l: ",
+  ["Fish Oil"] = "Рыбий жир",
+  ["Fish Oil.SHORT"] = "Жир: ",
   -- warlock
-  ["Soul Shard"] = "Seelensplitter",
-  ["Soul Shard.SHORT"] = "Splitter: ",
+  ["Soul Shard"] = "Осколок души",
+  ["Soul Shard.SHORT"] = "Осколок: ",
   ["Healthstone"] = "Gesundheitsstein",
   ["Healthstone.SHORT"] = "Gesundheitsstein: ",
   ["Soulstone"] = "Seelenstein",
