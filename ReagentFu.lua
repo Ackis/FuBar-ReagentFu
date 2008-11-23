@@ -29,6 +29,7 @@ local sortOrder = {
 		--priest
 		["Holy Candle"] = 1,
 		["Sacred Candle"] = 2,
+		["Devout Candle"] = 3,
 		-- rogue
 		["Flash Powder"] = 3,
 		["Blinding Powder"] = 4,
@@ -190,6 +191,9 @@ function ReagentFu:OnInitialize()
 		end
 		if self.db.char.showReagent[L["Sacred Candle"]] == nil then
 			self.db.char.showReagent[L["Sacred Candle"]] = true
+		end
+		if self.db.char.showReagent[L["Devout Candle"]] == nil then
+			self.db.char.showReagent[L["Devout Candle"]] = true
 		end
 		if self.db.char.showReagent[L["Light Feather"]] == nil then
 			self.db.char.showReagent[L["Light Feather"]] = true

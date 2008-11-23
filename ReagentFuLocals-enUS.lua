@@ -22,6 +22,8 @@ L:RegisterTranslations("enUS", function() return {
 	["Holy Candle.SHORT"] = "Holy: ",
 	["Sacred Candle"] = true,
 	["Sacred Candle.SHORT"] = "Sacred: ",
+	["Devout Candle"] = true,
+	["Devout Candle.SHORT"] = "Devout :",
 	-- rogue
 	["Flash Powder"] = true,
 	["Flash Powder.SHORT"] = "Flash: ",
