@@ -31,14 +31,12 @@ local sortOrder = {
 		["Sacred Candle"] = 2,
 		["Devout Candle"] = 3,
 		-- rogue
-		["Flash Powder"] = 3,
-		["Blinding Powder"] = 4,
-		["Thistle Tea"] = 5,
-		["Instant Poison"] = 6,
-		["Deadly Poison"] = 7,
-		["Crippling Poison"] = 8,
-		["Mind-numbing Poison"] = 9,
-		["Wound Poison"] = 10,
+		["Thistle Tea"] = 3,
+		["Instant Poison"] = 4,
+		["Deadly Poison"] = 5,
+		["Crippling Poison"] = 6,
+		["Mind-numbing Poison"] = 7,
+		["Wound Poison"] = 8,
 		--druid
 		["Wild Berries"] = 1,
 		["Wild Thornroot"] = 2,
@@ -49,6 +47,8 @@ local sortOrder = {
 		["Hornbeam Seed"] = 7,
 		["Ironwood Seed"] = 8,
 		["Flintweed Seed"] = 9,
+		["Starleaf Seed"] = 10,
+		["Wild Spineleaf"] = 11,
 		-- Paladin
 		["Symbol of Divinity"] = 1,
 		["Symbol of Kings"] = 2,
@@ -64,6 +64,8 @@ local sortOrder = {
 		["Firestone"] = 5,
 		["Infernal Stone"] = 6,
 		["Demonic Figurine"] = 7,
+		-- death knight
+		["Corpse Dust"] = 1,
 		-- hunter, rogue, warrior
 		["Arrow"] = 1,
 		["Bullet"] = 2,
@@ -165,6 +167,12 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Flintweed Seed"]] == nil then
 			self.db.char.showReagent[L["Flintweed Seed"]] = true
 		end
+		if self.db.char.showReagent[L["Starleaf Seed"]] == nil then
+			self.db.char.showReagent[L["Starleaf Seed"]] = true
+		end
+		if self.db.char.showReagent[L["Wild Spineleaf"]] == nil then
+			self.db.char.showReagent[L["Wild Spineleaf"]] = true
+		end	
 	elseif playerClass == "MAGE" then
 		if self.db.char.showReagent[L["Arcane Powder"]] == nil then
 			self.db.char.showReagent[L["Arcane Powder"]] = true
@@ -199,12 +207,6 @@ function ReagentFu:OnInitialize()
 			self.db.char.showReagent[L["Light Feather"]] = true
 		end
 	elseif playerClass == "ROGUE" then
-		if self.db.char.showReagent[L["Flash Powder"]] == nil then
-			self.db.char.showReagent[L["Flash Powder"]] = true
-		end
-		if self.db.char.showReagent[L["Blinding Powder"]] == nil then
-			self.db.char.showReagent[L["Blinding Powder"]] = true
-		end
 		if self.db.char.showReagent[L["Thistle Tea"]] == nil then
 			self.db.char.showReagent[L["Thistle Tea"]] = true
 		end
@@ -261,6 +263,10 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Demonic Figurine"]] == nil then
 			self.db.char.showReagent[L["Demonic Figurine"]] = true
 		end
+	elseif playerClass == "DEATHKNIGHT" then
+		if self.db.char.showReagent[L["Corpse Dust"]] == nil then
+			self.db.char.showReagent[L["Corpse Dust"]] = true
+		end			
 	elseif playerClass == "HUNTER" then
 		if self.db.char.showReagent[L["Arrow"]] == nil then
 			self.db.char.showReagent[L["Arrow"]] = true
@@ -296,6 +302,8 @@ function ReagentFu:OnEnable()
 		self:SetIcon("Interface\\Icons\\INV_Jewelry_Talisman_06")
 	elseif (playerClass == "WARLOCK") then
 		self:SetIcon("Interface\\Icons\\INV_Misc_Gem_Amethyst_02")
+	elseif (playerClass == "DEATHKNIGHT") then
+		self:SetIcon("Interface\\Icons\\INV_Misc_Dust_02")
 	elseif (playerClass == "HUNTER" or playerClass == "WARRIOR") then
 		self:SetIcon("Interface\\Icons\\INV_Ammo_Arrow_02")
 	else

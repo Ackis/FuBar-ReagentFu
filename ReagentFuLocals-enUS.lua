@@ -25,10 +25,6 @@ L:RegisterTranslations("enUS", function() return {
 	["Devout Candle"] = true,
 	["Devout Candle.SHORT"] = "Devout :",
 	-- rogue
-	["Flash Powder"] = true,
-	["Flash Powder.SHORT"] = "Flash: ",
-	["Blinding Powder"] = true,
-	["Blinding Powder.SHORT"] = "Blind: ",
 	["Thistle Tea"] = true,
 	["Thistle Tea.SHORT"] = "Tea: ",
 	["Instant Poison"] = true,
@@ -56,6 +52,10 @@ L:RegisterTranslations("enUS", function() return {
 	["Ironwood Seed.SHORT"] = "Ironwood: ",
 	["Flintweed Seed"] = true,
 	["Flintweed Seed.SHORT"] = "Flintweed: ",
+	["Starleaf Seed"] = true,
+  ["Starleaf Seed.SHORT"] = "Starleaf: ",
+	["Wild Spineleaf"] = true,
+	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
 	-- Paladin
 	["Symbol of Divinity"] = true,
 	["Symbol of Divinity.SHORT"] = "Divinity: ",
@@ -83,6 +83,9 @@ L:RegisterTranslations("enUS", function() return {
 	["Infernal Stone.SHORT"] = "Infernal: ",
 	["Demonic Figurine"] = true,
 	["Demonic Figurine.SHORT"] = "Demonic: ",
+  -- death knight
+	["Corpse Dust"] = true,
+	["Corpse Dust.SHORT"] = "Dust: ",	
     -- hunter, rogue, warrior
     ["Arrow"] = true,
     ["Arrow.SHORT"] = "-> ",

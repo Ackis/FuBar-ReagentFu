@@ -22,11 +22,9 @@ L:RegisterTranslations("deDE", function() return {
   ["Holy Candle.SHORT"] = "Heilige: ",
   ["Sacred Candle"] = "Hochheilige Kerze",
   ["Sacred Candle.SHORT"] = "Hochheilige: ",
+  ["Devout Candle"] = "Andachtskerze",
+	["Devout Candle.SHORT"] = "Andachts: ",
   -- rogue
-  ["Flash Powder"] = "Blitzstrahlpulver",
-  ["Flash Powder.SHORT"] = "Blitz: ",
-  ["Blinding Powder"] = "Blendungspulver",
-  ["Blinding Powder.SHORT"] = "Blend: ",
   ["Thistle Tea"] = "Disteltee",
   ["Thistle Tea.SHORT"] = "Distel: ",
   ["Instant Poison"] = "Sofort wirkendes Gift",
@@ -54,6 +52,10 @@ L:RegisterTranslations("deDE", function() return {
   ["Ironwood Seed.SHORT"] = "Eisenholz: ",
   ["Flintweed Seed"] = "Flintgrassaat",
   ["Flintweed Seed.SHORT"] = "Flintgras: ",
+  ["Starleaf Seed"] = "Sternblattsamen",
+  ["Starleaf Seed.SHORT"] = "Sternblatt: ",
+	["Wild Spineleaf"] = "Wildes Wirbelkraut",
+	["Wild Spineleaf.SHORT"] = "Wirbelkraut: ",
   -- Paladin
   ["Symbol of Divinity"] = "Symbol der Offenbarung",
   ["Symbol of Divinity.SHORT"] = "Offenb.: ",
@@ -81,7 +83,10 @@ L:RegisterTranslations("deDE", function() return {
   ["Infernal Stone.SHORT"] = "H\195\182llen: ",
   ["Demonic Figurine"] = "D\195\164monenstatuette",
   ["Demonic Figurine.SHORT"] = "Statuette: ",
-   -- hunter, rogue, warrior
+  -- death knight
+	["Corpse Dust"] = "Leichenstaub",
+	["Corpse Dust.SHORT"] = "Staub: ",
+	   -- hunter, rogue, warrior
   ["Arrow"] = "Pfeil",
   ["Arrow.SHORT"] = "-> ",
   ["Bullet"] = "Kugel",
