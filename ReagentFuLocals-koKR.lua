@@ -1,8 +1,9 @@
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("koKR", function() return {
+
+	-- General
 	["Keeps track of your reagents for buffing."] = "소모성 재료의 수량을 표시합니다.",
-	
 	["Show short names"] = "짧은 이름 보기",
 	["Show short reagent names in FuBar text"] = "FuBar 텍스트로 재료의 짧은 이름을 표시합니다",
 	["Reagents"] = "재료",
@@ -22,11 +23,9 @@ L:RegisterTranslations("koKR", function() return {
 	["Holy Candle.SHORT"] = "신성: ",
 	["Sacred Candle"] = "성스러운 양초",
 	["Sacred Candle.SHORT"] = "성: ",
+	["Devout Candle"] = "Devout Candle",
+	["Devout Candle.SHORT"] = "Devout :",
 	-- rogue
-	["Flash Powder"] = "섬광 화약",
-	["Flash Powder.SHORT"] = "섬광: ",
-	["Blinding Powder"] = "실명 가루",
-	["Blinding Powder.SHORT"] = "실명: ",
 	["Thistle Tea"] = "엉겅퀴 차",
 	["Thistle Tea.SHORT"] = "엉겅퀴: ",
 	["Instant Poison"] = "순간 효과 독",
@@ -35,6 +34,7 @@ L:RegisterTranslations("koKR", function() return {
 	["Mind-numbing Poison"] = "정신 마비 독",
 	["Wound Poison"] = "상처 감염 독",
 	["Poison: "] = "독: ",
+	["Anesthetic Poison"] = "Anesthetic Poison",
 	--druid
 	["Wild Berries"] = "야생 가지",
 	["Wild Berries.SHORT"] = "가지: ",
@@ -54,6 +54,10 @@ L:RegisterTranslations("koKR", function() return {
 	["Ironwood Seed.SHORT"] = "강철: ",
 	["Flintweed Seed"] = "차돌나무 씨앗",
 	["Flintweed Seed.SHORT"] = "차돌: ",
+	["Starleaf Seed"] = "Starleaf Seed",
+	["Starleaf Seed.SHORT"] = "Starleaf: ",
+	["Wild Spineleaf"] = "Wild Spineleaf",
+	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
 	-- Paladin
 	["Symbol of Divinity"] = "신앙의 징표",
 	["Symbol of Divinity.SHORT"] = "신앙: ",
@@ -81,9 +85,13 @@ L:RegisterTranslations("koKR", function() return {
 	["Infernal Stone.SHORT"] = "지옥: ",
 	["Demonic Figurine"] = "악마의 구슬",
 	["Demonic Figurine.SHORT"] = "악마: ",
+	-- death knight
+	["Corpse Dust"] = "Corpse Dust",
+	["Corpse Dust.SHORT"] = "Dust: ",
     -- hunter, rogue, warrior
     ["Arrow"] = "화살",
     ["Arrow.SHORT"] = "-> ",
     ["Bullet"] = "탄환",
     ["Bullet.SHORT"] = "* ",
+
 } end)

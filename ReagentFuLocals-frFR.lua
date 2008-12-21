@@ -1,8 +1,9 @@
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("frFR", function() return {
+
+	-- General
 	["Keeps track of your reagents for buffing."] = "Compte vos r\195\169actifs pour les am\195\169liorations.",
-	
 	["Show short names"] = "Montrez les noms courts ",
 	["Show short reagent names in FuBar text"] = "Montrer les noms courts de r\195\169actif en texte de FuBar",
 	["Reagents"] = "R\195\169actifs",
@@ -22,11 +23,9 @@ L:RegisterTranslations("frFR", function() return {
 	["Holy Candle.SHORT"] = "Sanctifi\195\169e : ",
 	["Sacred Candle"] = "Bougie sacr\195\169e",
 	["Sacred Candle.SHORT"] = "Sacr\195\169e : ",
+	["Devout Candle"] = "Devout Candle",
+	["Devout Candle.SHORT"] = "Devout :",
 	-- rogue
-	["Flash Powder"] = "Poudre \195\169clipsante",
-	["Flash Powder.SHORT"] = "\195\169clipsante : ",
-	["Blinding Powder"] = "Poudre aveuglante",
-	["Blinding Powder.SHORT"] = "Aveuglante : ",
 	["Thistle Tea"] = "Th\195\169 de chardon",
 	["Thistle Tea.SHORT"] = "Chardon : ",
 	["Instant Poison"] = "Poison instantan\195\169",
@@ -35,6 +34,7 @@ L:RegisterTranslations("frFR", function() return {
 	["Mind-numbing Poison"] = "Poison de distraction mentale",
 	["Wound Poison"] = "Poison douloureux",
 	["Poison: "] = "Poison : ",
+	["Anesthetic Poison"] = "Anesthetic Poison",
 	--druid
 	["Wild Berries"] = "Baies sauvages",
 	["Wild Berries.SHORT"] = "Baie : ",
@@ -54,6 +54,10 @@ L:RegisterTranslations("frFR", function() return {
 	["Ironwood Seed.SHORT"] = "Bois de fer : ",
 	["Flintweed Seed"] = "Graine d'herbe-silex",
 	["Flintweed Seed.SHORT"] = "Herbe-silex : ",
+	["Starleaf Seed"] = "Starleaf Seed",
+	["Starleaf Seed.SHORT"] = "Starleaf: ",
+	["Wild Spineleaf"] = "Wild Spineleaf",
+	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
 	-- Paladin
 	["Symbol of Divinity"] = "Symbole de divinit\195\169",
 	["Symbol of Divinity.SHORT"] = "Divinit\195\169: ",
@@ -81,9 +85,13 @@ L:RegisterTranslations("frFR", function() return {
 	["Infernal Stone.SHORT"] = "Infernal: ",
 	["Demonic Figurine"] = "Figurine d\195\169moniaque",
 	["Demonic Figurine.SHORT"] = "D\195\169moniaque: ",
+	-- death knight
+	["Corpse Dust"] = "Corpse Dust",
+	["Corpse Dust.SHORT"] = "Dust: ",
     -- hunter, rogue, warrior
     ["Arrow"] = "Flèche",
     ["Arrow.SHORT"] = "-> ",
     ["Bullet"] = "Balle",
     ["Bullet.SHORT"] = "* ",
+
 } end)

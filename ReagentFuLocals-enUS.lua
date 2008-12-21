@@ -1,12 +1,13 @@
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("enUS", function() return {
+
+	-- General
 	["Keeps track of your reagents for buffing."] = true,
-	
 	["Show short names"] = true,
 	["Show short reagent names in FuBar text"] = true,
 	["Reagents"] = true,
-	
+
 	-- reagents
 	--mage	
 	["Arcane Powder"] = true,
@@ -54,7 +55,7 @@ L:RegisterTranslations("enUS", function() return {
 	["Flintweed Seed"] = true,
 	["Flintweed Seed.SHORT"] = "Flintweed: ",
 	["Starleaf Seed"] = true,
-  ["Starleaf Seed.SHORT"] = "Starleaf: ",
+	["Starleaf Seed.SHORT"] = "Starleaf: ",
 	["Wild Spineleaf"] = true,
 	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
 	-- Paladin
@@ -84,12 +85,13 @@ L:RegisterTranslations("enUS", function() return {
 	["Infernal Stone.SHORT"] = "Infernal: ",
 	["Demonic Figurine"] = true,
 	["Demonic Figurine.SHORT"] = "Demonic: ",
-  -- death knight
+	-- death knight
 	["Corpse Dust"] = true,
-	["Corpse Dust.SHORT"] = "Dust: ",	
-    -- hunter, rogue, warrior
-    ["Arrow"] = true,
-    ["Arrow.SHORT"] = "-> ",
-    ["Bullet"] = true,
-    ["Bullet.SHORT"] = "* ",
+	["Corpse Dust.SHORT"] = "Dust: ",
+	-- hunter, rogue, warrior
+	["Arrow"] = true,
+	["Arrow.SHORT"] = "-> ",
+	["Bullet"] = true,
+	["Bullet.SHORT"] = "* ",
+
 } end)

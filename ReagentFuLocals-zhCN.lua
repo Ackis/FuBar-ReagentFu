@@ -1,8 +1,9 @@
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("zhCN", function() return {
+
+	-- General
 	["Keeps track of your reagents for buffing."] = "监视你的施法材料数量。",
-	
 	["Show short names"] = "显示简称",
 	["Show short reagent names in FuBar text"] = "在 FuBar 上显示施法材料的简称。",
 	["Reagents"] = "施法材料",
@@ -22,11 +23,9 @@ L:RegisterTranslations("zhCN", function() return {
 	["Holy Candle.SHORT"] = "圣:",
 	["Sacred Candle"] = "神圣蜡烛",
 	["Sacred Candle.SHORT"] = "神:",
+	["Devout Candle"] = "Devout Candle",
+	["Devout Candle.SHORT"] = "Devout :",
 	-- rogue
-	["Flash Powder"] = "闪光粉",
-	["Flash Powder.SHORT"] = "闪:",
-	["Blinding Powder"] = "致盲粉",
-	["Blinding Powder.SHORT"] = "盲:",
 	["Thistle Tea"] = "菊花茶",
 	["Thistle Tea.SHORT"] = "茶:",
 	["Instant Poison"] = "速效药膏",
@@ -35,6 +34,7 @@ L:RegisterTranslations("zhCN", function() return {
 	["Mind-numbing Poison"] = "麻痹药膏",
 	["Wound Poison"] = "致伤药膏",
 	["Poison: "] = "毒:",
+	["Anesthetic Poison"] = "Anesthetic Poison",
 	--druid
 	["Wild Berries"] = "野生浆果",
 	["Wild Berries.SHORT"] = "浆:",
@@ -54,6 +54,10 @@ L:RegisterTranslations("zhCN", function() return {
 	["Ironwood Seed.SHORT"] = "铁:",
 	["Flintweed Seed"] = "灼草种子",
 	["Flintweed Seed.SHORT"] = "灼:",
+	["Starleaf Seed"] = "Starleaf Seed",
+	["Starleaf Seed.SHORT"] = "Starleaf: ",
+	["Wild Spineleaf"] = "Wild Spineleaf",
+	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
 	-- Paladin
 	["Symbol of Divinity"] = "神圣符印",
 	["Symbol of Divinity.SHORT"] = "神:",
@@ -81,9 +85,13 @@ L:RegisterTranslations("zhCN", function() return {
 	["Infernal Stone.SHORT"] = "狱:",
 	["Demonic Figurine"] = "恶魔雕像",
 	["Demonic Figurine.SHORT"] = "恶:",
+	-- death knight
+	["Corpse Dust"] = "Corpse Dust",
+	["Corpse Dust.SHORT"] = "Dust: ",
     -- hunter, rogue, warrior
     ["Arrow"] = "箭",
     ["Arrow.SHORT"] = "-> ",
     ["Bullet"] = "子弹",
     ["Bullet.SHORT"] = "* ",
+
 } end)
