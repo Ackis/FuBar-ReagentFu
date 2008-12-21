@@ -37,6 +37,7 @@ local sortOrder = {
 		["Crippling Poison"] = 6,
 		["Mind-numbing Poison"] = 7,
 		["Wound Poison"] = 8,
+		["Anesthetic Poison"] = 9,
 		--druid
 		["Wild Berries"] = 1,
 		["Wild Thornroot"] = 2,
@@ -225,6 +226,9 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Wound Poison"]] == nil then
 			self.db.char.showReagent[L["Wound Poison"]] = true
 		end
+		if self.db.char.showReagent[L["Anesthetic Poison"]] == nil then
+			self.db.char.showReagent[L["Anesthetic Poison"]] = true
+		end
 		if self.db.char.showReagent[L["Arrow"]] == nil then
 			self.db.char.showReagent[L["Arrow"]] = true
 		end
@@ -297,7 +301,7 @@ function ReagentFu:OnEnable()
 	elseif (playerClass == "PRIEST") then
 		self:SetIcon("Interface\\Icons\\INV_Misc_Candle_03")
 	elseif (playerClass == "ROGUE") then
-		self:SetIcon("Interface\\Icons\\INV_Misc_Powder_Purple")
+		self:SetIcon("Interface\\Icons\\Trade_BrewPoison")
 	elseif (playerClass == "SHAMAN") then
 		self:SetIcon("Interface\\Icons\\INV_Jewelry_Talisman_06")
 	elseif (playerClass == "WARLOCK") then
@@ -380,6 +384,7 @@ function ReagentFu:OnTextUpdate()
 					k == L["Deadly Poison"] or
 					k == L["Crippling Poison"] or
 					k == L["Mind-numbing Poison"] or
+					k == L ["Anesthetic Poison"] or
 					k == L["Wound Poison"] then
 					poisonCount = poisonCount + v
 				else

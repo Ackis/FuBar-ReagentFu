@@ -32,6 +32,7 @@ L:RegisterTranslations("deDE", function() return {
   ["Crippling Poison"] = "Verkr\195\188ppelndes Gift",
   ["Mind-numbing Poison"] = "Gedankenbenebelndes Gift",
   ["Wound Poison"] = "Wundgift",
+  ["Anesthetic Poison"] = "Beruhigendes Gift",
   ["Poison: "] = "Gift: ",
   --druid
   ["Wild Berries"] = "Wilde Beeren",

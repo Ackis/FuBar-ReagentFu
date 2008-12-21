@@ -32,6 +32,7 @@ L:RegisterTranslations("enUS", function() return {
 	["Crippling Poison"] = true,
 	["Mind-numbing Poison"] = true,
 	["Wound Poison"] = true,
+	["Anesthetic Poison"] = true,
 	["Poison: "] = true,
 	--druid
 	["Wild Berries"] = true,
