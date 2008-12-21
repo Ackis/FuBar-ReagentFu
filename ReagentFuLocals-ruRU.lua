@@ -23,8 +23,8 @@ L:RegisterTranslations("ruRU", function() return {
 	["Holy Candle.SHORT"] = "Свеча: ",
 	["Sacred Candle"] = "Священная свеча",
 	["Sacred Candle.SHORT"] = "Святая свеча: ",
-	["Devout Candle"] = "Devout Candle",
-	["Devout Candle.SHORT"] = "Devout :",
+	["Devout Candle"] = "Свеча благочестия",
+	["Devout Candle.SHORT"] = "Благочестия: ", 
 	-- rogue
 	["Thistle Tea"] = "Disteltee",
 	["Thistle Tea.SHORT"] = "Distel: ",
@@ -34,7 +34,7 @@ L:RegisterTranslations("ruRU", function() return {
 	["Mind-numbing Poison"] = "Gedankenbenebelndes Gift",
 	["Wound Poison"] = "Wundgift",
 	["Poison: "] = "Яд: ",
-	["Anesthetic Poison"] = "Anesthetic Poison",
+	["Anesthetic Poison"] = "Анестезирующий яд",
 	--druid
 	["Wild Berries"] = "Лесные ягоды",
 	["Wild Berries.SHORT"] = "Ягоды: ",
@@ -54,10 +54,10 @@ L:RegisterTranslations("ruRU", function() return {
 	["Ironwood Seed.SHORT"] = "Железн: ",
 	["Flintweed Seed"] = "Семена кремень-травы",
 	["Flintweed Seed.SHORT"] = "Кремень: ",
-	["Starleaf Seed"] = "Starleaf Seed",
-	["Starleaf Seed.SHORT"] = "Starleaf: ",
-	["Wild Spineleaf"] = "Wild Spineleaf",
-	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
+	["Starleaf Seed"] = "Семечко звездолиста ",
+	["Starleaf Seed.SHORT"] = "Звездолист: ",
+	["Wild Spineleaf"] = "Дикий шиполист",
+	["Wild Spineleaf.SHORT"] = "Шиполист: ",
 	-- Paladin
 	["Symbol of Divinity"] = "Символ божественности",
 	["Symbol of Divinity.SHORT"] = "Божеств.: ",
@@ -86,8 +86,8 @@ L:RegisterTranslations("ruRU", function() return {
 	["Demonic Figurine"] = "Демоническая статуэтка",
 	["Demonic Figurine.SHORT"] = "Статуэтка: ",
 	-- death knight
-	["Corpse Dust"] = "Corpse Dust",
-	["Corpse Dust.SHORT"] = "Dust: ",
+	["Corpse Dust"] = "Прах",
+	["Corpse Dust.SHORT"] = "Прах: ",
 	-- hunter, rogue, warrior
 	["Arrow"] = "Стрелы",
 	["Arrow.SHORT"] = "-> ",
