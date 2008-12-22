@@ -23,8 +23,8 @@ L:RegisterTranslations("koKR", function() return {
 	["Holy Candle.SHORT"] = "신성: ",
 	["Sacred Candle"] = "성스러운 양초",
 	["Sacred Candle.SHORT"] = "성: ",
-	["Devout Candle"] = "Devout Candle",
-	["Devout Candle.SHORT"] = "Devout :",
+	["Devout Candle"] = "기원의 양초",
+	["Devout Candle.SHORT"] = "기원:",
 	-- rogue
 	["Thistle Tea"] = "엉겅퀴 차",
 	["Thistle Tea.SHORT"] = "엉겅퀴: ",
@@ -34,7 +34,7 @@ L:RegisterTranslations("koKR", function() return {
 	["Mind-numbing Poison"] = "정신 마비 독",
 	["Wound Poison"] = "상처 감염 독",
 	["Poison: "] = "독: ",
-	["Anesthetic Poison"] = "Anesthetic Poison",
+	["Anesthetic Poison"] = "정신 마취 독",
 	--druid
 	["Wild Berries"] = "야생 가지",
 	["Wild Berries.SHORT"] = "가지: ",
@@ -54,10 +54,10 @@ L:RegisterTranslations("koKR", function() return {
 	["Ironwood Seed.SHORT"] = "강철: ",
 	["Flintweed Seed"] = "차돌나무 씨앗",
 	["Flintweed Seed.SHORT"] = "차돌: ",
-	["Starleaf Seed"] = "Starleaf Seed",
-	["Starleaf Seed.SHORT"] = "Starleaf: ",
-	["Wild Spineleaf"] = "Wild Spineleaf",
-	["Wild Spineleaf.SHORT"] = "Spineleaf: ",
+	["Starleaf Seed"] = "별잎 씨앗",
+	["Starleaf Seed.SHORT"] = "별잎: ",
+	["Wild Spineleaf"] = "야생 가시돌기",
+	["Wild Spineleaf.SHORT"] = "돌기: ",
 	-- Paladin
 	["Symbol of Divinity"] = "신앙의 징표",
 	["Symbol of Divinity.SHORT"] = "신앙: ",
@@ -86,8 +86,8 @@ L:RegisterTranslations("koKR", function() return {
 	["Demonic Figurine"] = "악마의 구슬",
 	["Demonic Figurine.SHORT"] = "악마: ",
 	-- death knight
-	["Corpse Dust"] = "Corpse Dust",
-	["Corpse Dust.SHORT"] = "Dust: ",
+	["Corpse Dust"] = "시체 가루",
+	["Corpse Dust.SHORT"] = "시체: ",
     -- hunter, rogue, warrior
     ["Arrow"] = "화살",
     ["Arrow.SHORT"] = "-> ",

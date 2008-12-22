@@ -15,7 +15,7 @@
 ## Dependencies: FuBar
 ## SavedVariables: ReagentFuDB
 ## SavedVariablesPerCharacter: ReagentFuCharDB
-## Version: 3.01
+## Version: 3.02
 ## LoadOnDemand: 1
 
 libs\AceLibrary\AceLibrary.lua
