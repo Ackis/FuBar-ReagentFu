@@ -9,5 +9,7 @@
 <Include file="ReagentFuLocals-frFR.lua"/>
 <Include file="ReagentFuLocals-zhTW.lua"/>
 <Include file="ReagentFuLocals-zhCN.lua"/>
+<Include file="ReagentFuLocals-esES.lua"/>
+<Include file="ReagentFuLocals-esMX.lua"/>
 
 </Ui>

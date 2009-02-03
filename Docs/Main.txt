@@ -1,0 +1,16 @@
+==What it does==
+Keeps track of your reagents for buffing. 
+
+==Where to get it==
+* [http://www.wowace.com/projects/fu-bar_reagent-fu/ WoW Ace] - Alpha Quality
+* [http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx Curse] - Stable release
+* [http://www.wowinterface.com/downloads/info4818-FuBar-ReagentFu.html WoWInterface] - Stable release
+
+==Bug Reports==
+Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to file bug reports.  Posting bugs in the comments is not the place to do it.
+
+==Wish List==
+Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to add suggestions and feature requests.
+
+==Bug Reporting==
+Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to file bug reports.
