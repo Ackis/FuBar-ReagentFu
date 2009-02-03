@@ -15,7 +15,7 @@
 ## Dependencies: FuBar
 ## SavedVariables: ReagentFuDB
 ## SavedVariablesPerCharacter: ReagentFuCharDB
-## Version: 3.02
+## Version: 3.03
 ## LoadOnDemand: 1
 
 #@no-lib-strip@
