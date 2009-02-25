@@ -11,14 +11,17 @@ local fullCount = {
 		["Rune of Portals"] = 10,
 		["Rune of Teleportation"] = 10,
 		["Thistle Tea"] = 10,
-		["Ankh"] = 5,
+		["Ankh"] = 10,
 		["Soul Shard"] = 10,
 		["Soulstone"] = 1,
 		["Healthstone"] = 1,
 		["Firestone"] = 1,
 		["Spellstone"] = 1,
 		["Infernal Stone"] = 5,
-		["Demonic Figurine"] = 5
+		["Demonic Figurine"] = 5,
+		["Symbol of Kings"] = 100,
+		["Symbol of Divinity"] = 5,
+		["Arcane Powder"] = 100,
 	};
 local sortOrder = {
 		--mage
@@ -30,6 +33,7 @@ local sortOrder = {
 		["Holy Candle"] = 1,
 		["Sacred Candle"] = 2,
 		["Devout Candle"] = 3,
+		["Light Feather"] = 20,
 		-- rogue
 		["Thistle Tea"] = 3,
 		["Instant Poison"] = 4,
@@ -384,7 +388,7 @@ function ReagentFu:OnTextUpdate()
 					k == L["Deadly Poison"] or
 					k == L["Crippling Poison"] or
 					k == L["Mind-numbing Poison"] or
-					k == L ["Anesthetic Poison"] or
+					k == L["Anesthetic Poison"] or
 					k == L["Wound Poison"] then
 					poisonCount = poisonCount + v
 				else
