@@ -2,7 +2,6 @@ package-as: FuBar_ReagentFu
 
 license-output: LICENSE.txt
 
-# File list to ignore:
 ignore:
  - .pkgmeta
  - .docmeta
