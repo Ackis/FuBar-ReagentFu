@@ -9,7 +9,7 @@
 ## Author: Ackis, drathos
 ## eMail: ackis AT shaw DOT ca
 
-## Interface: 30100
+## Interface: 30200
 
 ## X-Website: http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx
 ## X-Category: Inventory
