@@ -142,9 +142,9 @@ function ReagentFu:ToggleShowing(reagent)
 	return self.db.char.showReagent[reagent]
 end
 
-function ReagentFu:OnInitialize()
+function ReagentFu:OnEnable()
 	_,playerClass = UnitClass("player")
-	if playerClass == "DRUID" then
+	if (playerClass == "DRUID") then
 		if self.db.char.showReagent[L["Wild Berries"]] == nil then
 			self.db.char.showReagent[L["Wild Berries"]] = true
 		end
@@ -178,7 +178,8 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Wild Spineleaf"]] == nil then
 			self.db.char.showReagent[L["Wild Spineleaf"]] = true
 		end	
-	elseif playerClass == "MAGE" then
+		self:SetIcon("Interface\\Icons\\INV_Misc_Branch_01")
+	elseif (playerClass == "MAGE") then
 		if self.db.char.showReagent[L["Arcane Powder"]] == nil then
 			self.db.char.showReagent[L["Arcane Powder"]] = true
 		end
@@ -191,14 +192,16 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Light Feather"]] == nil then
 			self.db.char.showReagent[L["Light Feather"]] = true
 		end
-	elseif playerClass == "PALADIN" then
+		self:SetIcon("Interface\\Icons\\INV_Misc_Dust_01")
+	elseif (playerClass == "PALADIN") then
 		if self.db.char.showReagent[L["Symbol of Divinity"]] == nil then
 			self.db.char.showReagent[L["Symbol of Divinity"]] = true
 		end
 		if self.db.char.showReagent[L["Symbol of Kings"]] == nil then
 			self.db.char.showReagent[L["Symbol of Kings"]] = true
 		end
-	elseif playerClass == "PRIEST" then
+		self:SetIcon("Interface\\Icons\\INV_Stone_WeightStone_05")
+	elseif (playerClass == "PRIEST") then
 		if self.db.char.showReagent[L["Holy Candle"]] == nil then
 			self.db.char.showReagent[L["Holy Candle"]] = true
 		end
@@ -211,7 +214,8 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Light Feather"]] == nil then
 			self.db.char.showReagent[L["Light Feather"]] = true
 		end
-	elseif playerClass == "ROGUE" then
+		self:SetIcon("Interface\\Icons\\INV_Misc_Candle_03")
+	elseif (playerClass == "ROGUE") then
 		if self.db.char.showReagent[L["Thistle Tea"]] == nil then
 			self.db.char.showReagent[L["Thistle Tea"]] = true
 		end
@@ -239,7 +243,8 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Bullet"]] == nil then
 			self.db.char.showReagent[L["Bullet"]] = true
 		end
-	elseif playerClass == "SHAMAN" then
+		self:SetIcon("Interface\\Icons\\Trade_BrewPoison")
+	elseif (playerClass == "SHAMAN") then
 		if self.db.char.showReagent[L["Ankh"]] == nil then
 			self.db.char.showReagent[L["Ankh"]] = true
 		end
@@ -249,7 +254,8 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Fish Oil"]] == nil then
 			self.db.char.showReagent[L["Fish Oil"]] = true
 		end
-	elseif playerClass == "WARLOCK" then
+		self:SetIcon("Interface\\Icons\\INV_Jewelry_Talisman_06")
+	elseif (playerClass == "WARLOCK") then
 		if self.db.char.showReagent[L["Soul Shard"]] == nil then
 			self.db.char.showReagent[L["Soul Shard"]] = true
 		end
@@ -271,53 +277,34 @@ function ReagentFu:OnInitialize()
 		if self.db.char.showReagent[L["Demonic Figurine"]] == nil then
 			self.db.char.showReagent[L["Demonic Figurine"]] = true
 		end
-	elseif playerClass == "DEATHKNIGHT" then
-		if self.db.char.showReagent[L["Corpse Dust"]] == nil then
-			self.db.char.showReagent[L["Corpse Dust"]] = true
-		end			
-	elseif playerClass == "HUNTER" then
-		if self.db.char.showReagent[L["Arrow"]] == nil then
-			self.db.char.showReagent[L["Arrow"]] = true
-		end
-		if self.db.char.showReagent[L["Bullet"]] == nil then
-			self.db.char.showReagent[L["Bullet"]] = true
-		end
-	elseif playerClass == "WARRIOR" then
-		if self.db.char.showReagent[L["Arrow"]] == nil then
-			self.db.char.showReagent[L["Arrow"]] = true
-		end
-		if self.db.char.showReagent[L["Bullet"]] == nil then
-			self.db.char.showReagent[L["Bullet"]] = true
-		end
-	else
-		self:Hide()
-	end
-	self.countValues = {}
-end
-
-function ReagentFu:OnEnable()
-	if (playerClass == "DRUID") then
-		self:SetIcon("Interface\\Icons\\INV_Misc_Branch_01")
-	elseif (playerClass == "MAGE") then
-		self:SetIcon("Interface\\Icons\\INV_Misc_Dust_01")
-	elseif (playerClass == "PALADIN") then
-		self:SetIcon("Interface\\Icons\\INV_Stone_WeightStone_05")
-	elseif (playerClass == "PRIEST") then
-		self:SetIcon("Interface\\Icons\\INV_Misc_Candle_03")
-	elseif (playerClass == "ROGUE") then
-		self:SetIcon("Interface\\Icons\\Trade_BrewPoison")
-	elseif (playerClass == "SHAMAN") then
-		self:SetIcon("Interface\\Icons\\INV_Jewelry_Talisman_06")
-	elseif (playerClass == "WARLOCK") then
 		self:SetIcon("Interface\\Icons\\INV_Misc_Gem_Amethyst_02")
 	elseif (playerClass == "DEATHKNIGHT") then
+		if self.db.char.showReagent[L["Corpse Dust"]] == nil then
+			self.db.char.showReagent[L["Corpse Dust"]] = true
+		end
 		self:SetIcon("Interface\\Icons\\INV_Misc_Dust_02")
-	elseif (playerClass == "HUNTER" or playerClass == "WARRIOR") then
+	elseif (playerClass == "HUNTER" then
+		if self.db.char.showReagent[L["Arrow"]] == nil then
+			self.db.char.showReagent[L["Arrow"]] = true
+		end
+		if self.db.char.showReagent[L["Bullet"]] == nil then
+			self.db.char.showReagent[L["Bullet"]] = true
+		end
+		self:SetIcon("Interface\\Icons\\INV_Ammo_Arrow_02")
+	elseif (playerClass == "WARRIOR") then
+		if self.db.char.showReagent[L["Arrow"]] == nil then
+			self.db.char.showReagent[L["Arrow"]] = true
+		end
+		if self.db.char.showReagent[L["Bullet"]] == nil then
+			self.db.char.showReagent[L["Bullet"]] = true
+		end
 		self:SetIcon("Interface\\Icons\\INV_Ammo_Arrow_02")
 	else
+		self:Hide()
 		self:SetIcon("Interface\\Icons\\INV_Misc_Book_09")
 	end
 	self:RegisterBucketEvent("BAG_UPDATE", 1, "Update")
+	self.countValues = {}
 end
 
 function ReagentFu:OnMenuRequest(level, value, inTooltip)
