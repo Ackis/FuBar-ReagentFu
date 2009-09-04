@@ -283,7 +283,7 @@ function ReagentFu:OnEnable()
 			self.db.char.showReagent[L["Corpse Dust"]] = true
 		end
 		self:SetIcon("Interface\\Icons\\INV_Misc_Dust_02")
-	elseif (playerClass == "HUNTER" then
+	elseif (playerClass == "HUNTER") then
 		if self.db.char.showReagent[L["Arrow"]] == nil then
 			self.db.char.showReagent[L["Arrow"]] = true
 		end
