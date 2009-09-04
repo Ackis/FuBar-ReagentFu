@@ -1,12 +1,12 @@
 ReagentFu = AceLibrary("AceAddon-2.0"):new("AceEvent-2.0", "AceDB-2.0", "FuBarPlugin-2.0")
 
-local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
-local dewdrop = AceLibrary("Dewdrop-2.0");
-local tablet = AceLibrary("Tablet-2.0");
-local crayon = AceLibrary("Crayon-2.0");
+local L = AceLibrary("AceLocale-2.2"):new("ReagentFu")
+local dewdrop = AceLibrary("Dewdrop-2.0")
+local tablet = AceLibrary("Tablet-2.0")
+local crayon = AceLibrary("Crayon-2.0")
 
-local playerClass = nil;
-local reagentCount = {};
+local playerClass = nil
+local reagentCount = {}
 local fullCount = {
 		["Rune of Portals"] = 10,
 		["Rune of Teleportation"] = 10,
@@ -22,7 +22,7 @@ local fullCount = {
 		["Symbol of Kings"] = 100,
 		["Symbol of Divinity"] = 5,
 		["Arcane Powder"] = 100,
-	};
+	}
 local sortOrder = {
 		--mage
 		["Arcane Powder"] = 1,
@@ -74,7 +74,7 @@ local sortOrder = {
 		-- hunter, rogue, warrior
 		["Arrow"] = 1,
 		["Bullet"] = 2,
-	};
+	}
 
 -- indicates field on local itemInfo table
 -- referenced from GetReagentCount()
@@ -91,7 +91,7 @@ local useFind = {
 		["Firestone"] = "name",
 		["Arrow"] = "subtype",
 		["Bullet"] = "subtype",
-	};
+	}
 	
 	
 ReagentFu.hasIcon = "Interface\\Icons\\INV_Misc_Book_09"
@@ -100,10 +100,10 @@ ReagentFu.defaultPosition = "LEFT"
 ReagentFu:RegisterDB("ReagentFuDB", "ReagentFuCharDB")
 ReagentFu:RegisterDefaults("profile", {
 	showShortNames = false,
-});
+})
 ReagentFu:RegisterDefaults("char", {
 	showReagent = {},
-});
+})
 
 local options = {
     type='group',
@@ -356,15 +356,15 @@ function ReagentFu:OnMenuRequest(level, value, inTooltip)
 end
 
 function ReagentFu:OnDataUpdate()
-	self:GetReagentCount();
---	table.sort(reagentCount, self:sortByKeys);
+	self:GetReagentCount()
+--	table.sort(reagentCount, self:sortByKeys)
 end
 
 function ReagentFu:OnTextUpdate()
-	local reverse;
-	local count_string = "";
-	local itemcount = 0;
-	local maxcount;
+	local reverse
+	local count_string = ""
+	local itemcount = 0
+	local maxcount
 	if (playerClass ~= "ROGUE") then
 		for k, v in self:pairsByKeys(reagentCount) do
 			if (v ~= nil) then
@@ -426,9 +426,9 @@ function ReagentFu:OnTooltipUpdate()
 		"child_textB", 0,
 		"showWithoutChildren", false
 	)
-	local r, g, b;
-	local itemcount = 0;
-	local maxcount;
+	local r, g, b
+	local itemcount = 0
+	local maxcount
 	for k, v in self:pairsByKeys(reagentCount) do
 		if v ~= nil then
 			maxcount = fullCount[L:GetReverseTranslation(k)]
@@ -445,12 +445,12 @@ function ReagentFu:GetReagentCount()
 		reagentCount[reagent] = 0
 	end
 	for bag = 4, 0, -1 do
-		local size = GetContainerNumSlots(bag);
+		local size = GetContainerNumSlots(bag)
 		if (size > 0) then
 			for slot = 1, size, 1 do
-				local _,itemCount = GetContainerItemInfo(bag, slot);
+				local _,itemCount = GetContainerItemInfo(bag, slot)
 				if (itemCount) then
-					itemInfo.name, _, _, _, _, itemInfo.type, itemInfo.subtype = self:NameFromLink(GetContainerItemLink(bag, slot));
+					itemInfo.name, _, _, _, _, itemInfo.type, itemInfo.subtype = self:NameFromLink(GetContainerItemLink(bag, slot))
 					if ((itemInfo.name) and (itemInfo.name ~= "")) then
 						for reagent, active in pairs(self.db.char.showReagent) do
 							if active then
