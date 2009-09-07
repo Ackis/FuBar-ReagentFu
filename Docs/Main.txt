@@ -2,24 +2,24 @@
 Keeps track of your reagents for buffing.
 
 ==Where to get it
-* [http://www.wowace.com/projects/fu-bar_reagent-fu/ WoW Ace] - Alpha Quality
-* [http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx Curse] - Stable release
-* [http://www.wowinterface.com/downloads/info4818-FuBar-ReagentFu.html WoWInterface] - Stable release
+* [[http://www.wowace.com/projects/fu-bar_reagent-fu/ | WoW Ace]] - Alpha Quality
+* [[http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx | Curse]] - Stable release
+* [[http://www.wowinterface.com/downloads/info4818-FuBar-ReagentFu.html | WoWInterface]] - Stable release
 
 ==How to get it to work==
 Install FuBar, and it will anchor to the FuBar window.  All options are configured via the FuBar menu.
 
 ==Bug Reports
-Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to file bug reports.  Posting bugs in the comments is not the place to do it.
+Please use the [[http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ | WoW Ace]] tracker to file bug reports.  Posting bugs in the comments is not the place to do it.
 
 ==Wish List
-Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to add suggestions and feature requests.
+Please use the [[http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ | WoW Ace]] tracker to add suggestions and feature requests.
 
 ==Bug Reporting
-Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to file bug reports.
+Please use the [[http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ | WoW Ace]] tracker to file bug reports.
 
 ==Donations
-I have setup a donation site via [[http://www.pledgie.com/campaigns/3462|Pledgie]].  Feel free to donate if you like this mod.  I have put countless hours of time and effort into it along with many people who have helped me.  I did not write this mod with the intent to make any money from it.  I wrote it to help me with some needs that I saw in-game, and well with requests and my goal to make it filled with information it's become a massive project.
+I have setup a donation site via [[http://www.pledgie.com/campaigns/3462 | Pledgie]].  Feel free to donate if you like this mod.  I have put countless hours of time and effort into it along with many people who have helped me.  I did not write this mod with the intent to make any money from it.  I wrote it to help me with some needs that I saw in-game, and well with requests and my goal to make it filled with information it's become a massive project.
 
 If you don't wish to donate money feel free to consider one of the following methods which may be more suitable:
 * Volunteer time at your local animal shelter such as the [[http://www.edmontonhumanesociety.com/|Society for Prevention of Cruelty for Animals (SPCA)]] or drop a few bucks off for them.  If you do this, please let [[http://www.wowace.com/home/send-private-message/|me]] know.
@@ -29,4 +29,4 @@ If you don't wish to donate money feel free to consider one of the following met
 *** Ackis is currently looking for a guild (along with his girlfriend).  We're looking for a guild which has compitent people that can progress through the hard modes, aren't full of themselves and raids somewhat casually (2-3 nights a week).
 
 ==Wiki
-[http://www.wowwiki.com/FuBar_ReagentFu WoW Wiki]
+[[http://www.wowwiki.com/FuBar_ReagentFu | WoW Wiki]]
