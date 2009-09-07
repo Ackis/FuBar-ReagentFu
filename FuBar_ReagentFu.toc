@@ -1,19 +1,42 @@
-﻿## Title: FuBar - |cffffffffReagent|r|cff00ff00Fu|r @project-version@
-## Title-koKR: |CFF99FF99F|CFFFFFFFFu|CFF99FF99B|CFFFFFFFFar - |cffffffffReagent|r|cff00ff00Fu|r
-## Notes: Keeps track of your reagents for buffing.
-## Notes-koKR: 소모성 재료의 수량을 확인합니다.
-## Notes-zhTW: 持續追蹤你職業所需的特殊材料
-## Notes-zhCN: 持续追踪你职业所需的特殊材料
-## Notes-ruRU: Отслеживает количество реагентов для баффов.
+﻿#@non-debug@
+## Title: @localization(locale="enUS", key="Title", namespace="ToC")@
+## Title-frFR: @localization(locale="frFR", key="Title", namespace="ToC")@
+## Title-deDE: @localization(locale="deDE", key="Title", namespace="ToC")@
+## Title-koKR: @localization(locale="koKR", key="Title", namespace="ToC")@
+## Title-esMX: @localization(locale="esMX", key="Title", namespace="ToC")@
+## Title-ruRU: @localization(locale="ruRU", key="Title", namespace="ToC")@
+## Title-zhCN: @localization(locale="zhCN", key="Title", namespace="ToC")@
+## Title-esES: @localization(locale="esES", key="Title", namespace="ToC")@
+## Title-zhTW: @localization(locale="zhTW", key="Title", namespace="ToC")@
+#@end-non-debug@
+#@debug@
+## Title: @localization(locale="enUS", key="Title", namespace="ToC")@
+#@end-debug@
+
+#@non-debug@
+## Notes: @localization(locale="enUS", key="Description", namespace="ToC")@
+## Notes-frFR: @localization(locale="frFR", key="Description", namespace="ToC")@
+## Notes-deDE: @localization(locale="deDE", key="Description", namespace="ToC")@
+## Notes-koKR: @localization(locale="koKR", key="Description", namespace="ToC")@
+## Notes-esMX: @localization(locale="esMX", key="Description", namespace="ToC")@
+## Notes-ruRU: @localization(locale="ruRU", key="Description", namespace="ToC")@
+## Notes-zhCN: @localization(locale="zhCN", key="Description", namespace="ToC")@
+## Notes-esES: @localization(locale="esES", key="Description", namespace="ToC")@
+## Notes-zhTW: @localization(locale="zhTW", key="Description", namespace="ToC")@
+#@end-non-debug@
+#@debug@
+## Notes: Latest alpha version of ReagentFu
+#@end-debug@
 
 ## Author: Ackis, drathos
 ## eMail: ackis AT shaw DOT ca
+## X-Donate: http://www.wowace.com/projects/fu-bar_reagent-fu/#w_donations
 
 ## Interface: 30200
 
 ## X-Website: http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx
 ## X-Category: Inventory
-## X-Embeds: Ace2, Tablet-2.0, FuBarPlugin-2.0, Crayon, DewdropLib
+## X-Embeds: Ace2, Tablet-2.0, FuBarPlugin-2.0, Crayon, DewdropLib, FuBar2Broker
 ## OptionalDeps: FuBar
 
 ## SavedVariables: ReagentFuDB
@@ -22,8 +45,6 @@
 ## Version: 3.04
 ## X-Revision: @project-version@
 ## X-Date: @file-date-iso@
-
-## LoadOnDemand: 1
 
 #@no-lib-strip@
 embeds.xml
