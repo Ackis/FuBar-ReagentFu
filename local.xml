@@ -2,7 +2,9 @@
 <Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 
+<!--@non-debug@
 <Include file="ReagentFuLocals-enUS.lua"/>
+@end-non-debug@-->
 <Include file="ReagentFuLocals-ruRU.lua"/>
 <Include file="ReagentFuLocals-koKR.lua"/>
 <Include file="ReagentFuLocals-deDE.lua"/>
@@ -11,5 +13,8 @@
 <Include file="ReagentFuLocals-zhCN.lua"/>
 <Include file="ReagentFuLocals-esES.lua"/>
 <Include file="ReagentFuLocals-esMX.lua"/>
+<!--@debug@-->
+<Include file="ReagentFuLocals-enUS-Repo.lua"/>
+<!--@end-debug@-->
 
 </Ui>
