@@ -1,7 +1,7 @@
-==What it does==
+==What it does
 Keeps track of your reagents for buffing.
 
-==Where to get it==
+==Where to get it
 * [http://www.wowace.com/projects/fu-bar_reagent-fu/ WoW Ace] - Alpha Quality
 * [http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx Curse] - Stable release
 * [http://www.wowinterface.com/downloads/info4818-FuBar-ReagentFu.html WoWInterface] - Stable release
@@ -9,13 +9,13 @@ Keeps track of your reagents for buffing.
 ==How to get it to work==
 Install FuBar, and it will anchor to the FuBar window.  All options are configured via the FuBar menu.
 
-==Bug Reports==
+==Bug Reports
 Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to file bug reports.  Posting bugs in the comments is not the place to do it.
 
-==Wish List==
+==Wish List
 Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to add suggestions and feature requests.
 
-==Bug Reporting==
+==Bug Reporting
 Please use the [http://www.wowace.com/projects/fu-bar_reagent-fu/tickets/ WoW Ace] tracker to file bug reports.
 
 ==Donations
@@ -28,5 +28,5 @@ If you don't wish to donate money feel free to consider one of the following met
 ** [[http://www.wowarmory.com/character-sheet.xml?r=Thunderlord&n=Ackis|Ackis Thunderlord (US)]] Ackis
 *** Ackis is currently looking for a guild (along with his girlfriend).  We're looking for a guild which has compitent people that can progress through the hard modes, aren't full of themselves and raids somewhat casually (2-3 nights a week).
 
-==Wiki==
+==Wiki
 [http://www.wowwiki.com/FuBar_ReagentFu WoW Wiki]
