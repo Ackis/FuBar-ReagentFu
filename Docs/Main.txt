@@ -1,12 +1,24 @@
 ==What it does
 Keeps track of your reagents for buffing.
 
+=====Korean (koKR)
+소모성 재료의 수량을 확인합니다.
+
+====Russian (ruRU)
+Отслеживает количество реагентов для баффов.
+
+=====Simplified Chinese (zhCN)
+持续追踪你职业所需的特殊材料
+
+=====Traditional Chinese (zhTW)
+持續追蹤你職業所需的特殊材料
+
 ==Where to get it
 * [[http://www.wowace.com/projects/fu-bar_reagent-fu/ | WoW Ace]] - Alpha Quality
 * [[http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx | Curse]] - Stable release
 * [[http://www.wowinterface.com/downloads/info4818-FuBar-ReagentFu.html | WoWInterface]] - Stable release
 
-==How to get it to work==
+==How to get it to work
 Install FuBar, and it will anchor to the FuBar window.  All options are configured via the FuBar menu.
 
 ==Bug Reports
