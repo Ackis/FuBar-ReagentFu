@@ -105,23 +105,7 @@ ReagentFu:RegisterDefaults("char", {
 	showReagent = {},
 })
 
-local options = {
-    type='group',
-    args = {
-		shortnames = {
-			type = "toggle",
-			name = L["Show short names"],
-			desc = L["Show short reagent names in FuBar text"],
-			get = function() return ReagentFu.db.profile.showShortNames end,
-			set = function()
-				ReagentFu.db.profile.showShortNames = not ReagentFu.db.profile.showShortNames
-				ReagentFu:Update()
-			end,
-		},
-	}
-}
-
-	-- Methods
+-- Methods
 function ReagentFu:IsShowingShortNames()
 	return self.db.profile.showShortNames
 end

@@ -55,7 +55,7 @@ L:RegisterTranslations("enUS", function() return
 	["Shiny Fish Scales"] = "Shiny Fish Scales",
 	["Shiny Fish Scales.SHORT"] = "Scales: ",
 	["Show short names"] = "Show short names",
-	["Show short reagent names in FuBar text"] = "Show short reagent names in FuBar text",
+	--["Show short reagent names in FuBar text"] = "Show short reagent names in FuBar text",
 	["Soul Shard"] = "Soul Shard",
 	["Soul Shard.SHORT"] = "Shard: ",
 	Soulstone = "Soulstone",
