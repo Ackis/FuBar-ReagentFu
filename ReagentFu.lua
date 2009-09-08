@@ -1,6 +1,12 @@
-ReagentFu = AceLibrary("AceAddon-2.0"):new("AceEvent-2.0", "AceDB-2.0", "FuBarPlugin-2.0")
+local LibStub = LibStub
 
-local L = AceLibrary("AceLocale-2.2"):new("ReagentFu")
+local MODNAME	= "ReagentFu"
+
+ReagentFu = LibStub("AceAddon-3.0"):NewAddon(MODNAME, "AceConsole-3.0", "AceEvent-3.0", "FuBarPlugin-2.0")
+
+local addon = LibStub("AceAddon-3.0"):GetAddon(MODNAME)
+local L	= LibStub("AceLocale-3.0"):GetLocale(MODNAME)
+
 local dewdrop = AceLibrary("Dewdrop-2.0")
 local tablet = AceLibrary("Tablet-2.0")
 local crayon = AceLibrary("Crayon-2.0")
