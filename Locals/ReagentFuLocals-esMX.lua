@@ -1,5 +1,5 @@
-local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
+local L = LibStub("AceLocale-3.0"):NewLocale("ReagentFu", "esMX", false);
 
-L:RegisterTranslations("esMX", function() return
---@localization(locale="esMX", format="lua_table", handle-unlocalized="ignore", escape-non-ascii=false)@
-end)
+if not L then return end
+
+--@localization(locale="esMX", format="lua_additive_table", handle-unlocalized="ignore", escape-non-ascii=false, same-key-is-true=true)@
