@@ -1,16 +1,16 @@
 ==What it does
 Keeps track of your reagents for buffing.
 
-=====Korean (koKR)
+====Korean (koKR)
 소모성 재료의 수량을 확인합니다.
 
 ====Russian (ruRU)
 Отслеживает количество реагентов для баффов.
 
-=====Simplified Chinese (zhCN)
+====Simplified Chinese (zhCN)
 持续追踪你职业所需的特殊材料
 
-=====Traditional Chinese (zhTW)
+====Traditional Chinese (zhTW)
 持續追蹤你職業所需的特殊材料
 
 ==Where to get it
