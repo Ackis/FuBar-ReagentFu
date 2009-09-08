@@ -3,18 +3,18 @@
 ..\FrameXML\UI.xsd">
 
 <!--@non-debug@
-<Include file="ReagentFuLocals-enUS.lua"/>
+<Include file="Locals\ReagentFuLocals-enUS.lua"/>
 @end-non-debug@-->
-<Include file="ReagentFuLocals-ruRU.lua"/>
-<Include file="ReagentFuLocals-koKR.lua"/>
-<Include file="ReagentFuLocals-deDE.lua"/>
-<Include file="ReagentFuLocals-frFR.lua"/>
-<Include file="ReagentFuLocals-zhTW.lua"/>
-<Include file="ReagentFuLocals-zhCN.lua"/>
-<Include file="ReagentFuLocals-esES.lua"/>
-<Include file="ReagentFuLocals-esMX.lua"/>
+<Include file="Locals\ReagentFuLocals-ruRU.lua"/>
+<Include file="Locals\ReagentFuLocals-koKR.lua"/>
+<Include file="Locals\ReagentFuLocals-deDE.lua"/>
+<Include file="Locals\ReagentFuLocals-frFR.lua"/>
+<Include file="Locals\ReagentFuLocals-zhTW.lua"/>
+<Include file="Locals\ReagentFuLocals-zhCN.lua"/>
+<Include file="Locals\ReagentFuLocals-esES.lua"/>
+<Include file="Locals\ReagentFuLocals-esMX.lua"/>
 <!--@debug@-->
-<Include file="ReagentFuLocals-enUS-Repo.lua"/>
+<Include file="Locals\ReagentFuLocals-enUS-Repo.lua"/>
 <!--@end-debug@-->
 
 </Ui>
