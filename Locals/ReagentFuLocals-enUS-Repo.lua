@@ -1,6 +1,6 @@
 local MODNAME	= "ReagentFu"
 
-local L = LibStub("AceLocale-3.0"):NewLocale(MODNAME, "enUS" true)
+local L = LibStub("AceLocale-3.0"):NewLocale(MODNAME, "enUS", true)
 
 if not L then return end
 
