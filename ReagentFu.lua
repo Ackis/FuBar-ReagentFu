@@ -1,4 +1,4 @@
-ReagentFu = AceLibrary("AceAddon-2.0"):new("AceEvent-2.0", "AceDB-2.0", "FuBarPlugin-2.0")
+﻿ReagentFu = AceLibrary("AceAddon-2.0"):new("AceEvent-2.0", "AceDB-2.0", "FuBarPlugin-2.0")
 
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu")
 local dewdrop = AceLibrary("Dewdrop-2.0")

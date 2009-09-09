@@ -1,4 +1,4 @@
-local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
+﻿local L = AceLibrary("AceLocale-2.2"):new("ReagentFu");
 
 L:RegisterTranslations("enUS", function() return
 {
