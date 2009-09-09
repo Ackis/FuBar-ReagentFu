@@ -36,8 +36,8 @@
 
 ## X-Website: http://wow.curse.com/downloads/wow-addons/details/fu-bar_reagent-fu.aspx
 ## X-Category: Inventory
-## X-Embeds: Ace2, Tablet-2.0, FuBarPlugin-2.0, Crayon, DewdropLib, FuBar2Broker
-## OptionalDeps: FuBar
+## X-Embeds: Ace2, Tablet-2.0, FuBarPlugin-2.0, CrayonLib, DewdropLib
+## OptionalDeps: Ace2, Tablet-2.0, FuBarPlugin-2.0, CrayonLib, DewdropLib, FuBar, FuBar2Broker
 
 ## SavedVariables: ReagentFuDB
 ## SavedVariablesPerCharacter: ReagentFuCharDB
