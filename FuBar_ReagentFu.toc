@@ -1,4 +1,4 @@
-#@non-debug@
+﻿#@non-debug@
 ## Title: @localization(locale="enUS", key="Title", namespace="ToC")@
 ## Title-frFR: @localization(locale="frFR", key="Title", namespace="ToC")@
 ## Title-deDE: @localization(locale="deDE", key="Title", namespace="ToC")@
