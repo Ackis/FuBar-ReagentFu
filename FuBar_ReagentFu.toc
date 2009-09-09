@@ -42,7 +42,7 @@
 ## SavedVariables: ReagentFuDB
 ## SavedVariablesPerCharacter: ReagentFuCharDB
 
-## Version: 3.04
+## Version: 3.05
 ## X-Revision: @project-version@
 ## X-Date: @file-date-iso@
 
