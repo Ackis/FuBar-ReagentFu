@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+﻿<?xml version="1.0" encoding="utf-8"?><Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 
 <!--Ace2 Libraries-->
@@ -11,7 +10,7 @@
 <Script file="libs\AceLocale-2.2\AceLocale-2.2.lua"/>
 
 <!--Libraries-->
-<Include file="Libs\LibCrayon-3.0\lib.xml"/>
+<Include file="libs\LibCrayon-3.0\lib.xml"/>
 <Script file="libs\FuBarPlugin-2.0\FuBarPlugin-2.0.lua"/>
 <Script file="libs\Dewdrop-2.0\Dewdrop-2.0.lua"/>
 <Script file="libs\Tablet-2.0\Tablet-2.0.lua"/>
