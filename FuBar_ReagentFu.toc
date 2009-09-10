@@ -10,7 +10,7 @@
 ## Title-zhTW: @localization(locale="zhTW", key="Title", namespace="ToC")@
 #@end-non-debug@
 #@debug@
-## Title: @localization(locale="enUS", key="Title", namespace="ToC")@
+## Title: FuBar ReagentFu
 #@end-debug@
 
 #@non-debug@
