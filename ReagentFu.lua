@@ -3,7 +3,7 @@
 local L = AceLibrary("AceLocale-2.2"):new("ReagentFu")
 local dewdrop = AceLibrary("Dewdrop-2.0")
 local tablet = AceLibrary("Tablet-2.0")
-local crayon = AceLibrary("Crayon-2.0")
+local Crayon = LibStub("LibCrayon-3.0")
 
 local playerClass = nil
 local reagentCount = {}
@@ -348,7 +348,7 @@ function ReagentFu:OnTextUpdate()
 				end
 				maxcount = fullCount[reverse]
 				if maxcount == nil then maxcount = 20 end
-				count_string = count_string..format("|cff%s%d|r", crayon:GetThresholdHexColor(v / maxcount), v)
+				count_string = count_string..format("|cff%s%d|r", Crayon:GetThresholdHexColor(v / maxcount), v)
 			end
 		end
 	else
@@ -372,7 +372,7 @@ function ReagentFu:OnTextUpdate()
 					if self:IsShowingShortNames() then
 						count_string = count_string .. L[reverse .. ".SHORT"]
 					end
-					count_string = count_string..format("|cff%s%d|r", crayon:GetThresholdHexColor(v / maxcount), v)
+					count_string = count_string..format("|cff%s%d|r", Crayon:GetThresholdHexColor(v / maxcount), v)
 				end
 			end
 		end
@@ -383,7 +383,7 @@ function ReagentFu:OnTextUpdate()
 		if self:IsShowingShortNames() then
 			count_string = count_string .. L["Poison: "]
 		end
-		count_string = count_string..format("|cff%s%d|r", crayon:GetThresholdHexColor(poisonCount / 10), poisonCount)
+		count_string = count_string..format("|cff%s%d|r", Crayon:GetThresholdHexColor(poisonCount / 10), poisonCount)
 	end
 	
 	self:SetText(count_string)
@@ -404,7 +404,7 @@ function ReagentFu:OnTooltipUpdate()
 		if v ~= nil then
 			maxcount = fullCount[L:GetReverseTranslation(k)]
 			if maxcount == nil then maxcount = 20 end
-			r, g, b = crayon:GetThresholdColor(v / maxcount)
+			r, g, b = Crayon:GetThresholdColor(v / maxcount)
 			cat:AddLine("text", k, "text2", v, "text2R", r, "text2G", g, "text2B", b)
 		end
 	end
